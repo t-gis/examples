@@ -2,17 +2,17 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from "path";
 
-//@ts-ignore
-const mode = import.meta.env.MODE;
-const isGitHubPages = (mode === "githubpages");
+export default ({ mode }) => {
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  base: isGitHubPages ? "/" : "./",
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, "src"),
-    }
-  },
-  plugins: [react()]
-})
+  const isGHPages = (mode === "ghpages");
+
+  return defineConfig({
+    base: isGHPages ? "/examples/" : "./",
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, "src"),
+      }
+    },
+    plugins: [react()]
+  })
+}

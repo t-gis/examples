@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "build:githubpages": "vite build --mode githubpages"
+    "build:ghpages": "vite build --mode ghpages"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",

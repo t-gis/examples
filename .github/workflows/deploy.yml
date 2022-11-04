@@ -1,0 +1,60 @@
+name: Deploy
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    setps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+        
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v2
+
+      - name: Build project
+        run: npm run build:ghpages
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v2
+          with:
+            name: production-files
+            path: ./dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    setps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to GitHub pages
+        uses: peaceiris/actions-gh-pages@v3
+
+
+
+      
+      
+          
+       
+
+
+  
+
+
