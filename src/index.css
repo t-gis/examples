@@ -1,0 +1,11 @@
+@import url("http://at.alicdn.com/t/c/font_3713047_vujs3rlkshm.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
