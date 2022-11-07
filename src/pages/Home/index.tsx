@@ -1,8 +1,9 @@
 import { memo, useCallback, useState } from "react";
-import { Box } from "./index.sty";
+import { Box, ContentBox } from "./index.sty";
 import Sidebar from "@/components/Sidebar";
 import Content from "@/components/Content";
 import { generatePath } from "react-router-dom";
+import Header from "@/components/Header";
 
 export type SidebarDataEntity = {
     title: string,
@@ -62,6 +63,24 @@ const Home = memo(() => {
                     list: [
                         { title: "天地图蓝色底图", url: "./codes/layers/tianditu-blue-1.js", image: "layers/tianditu-blue.png" },
                         { title: "天地图白色底图", url: "./codes/layers/tianditu-warm-1.js", image: "layers/tianditu-warm.png" },
+                        { title: "规资蓝色底图", url: "./codes/layers/tgis-blue-4490.js", image: "layers/tgis-blue-4490.png" },
+                        { title: "规资白色底图", url: "./codes/layers/tgis-warm-4490.js", image: "layers/tgis-warm-4490.png" },
+                    ]
+                }
+            ]
+        },
+        {
+            id: 5,
+            title: "矢量数据",
+            icon: "icon-guizeyinqing",
+            children: [
+                {
+                    title: "基础对象",
+                    list: [
+                        { title: "文字", url: "./codes/vector/entity-label.js", image: "vector/entity-label.png" },
+                        { title: "图片", url: "./codes/vector/entity-billboard.js", image: "vector/entity-billboard.png" },
+                        { title: "Point", url: "./codes/vector/entity-point.js", image: "vector/entity-point.png" },
+                        { title: "混合矢量", url: "./codes/vector/entity-mixin.js", image: "vector/entity-mixin.png" },
                     ]
                 }
             ]
@@ -115,8 +134,11 @@ const Home = memo(() => {
 
     return (
         <Box>
-            <Sidebar data={data} />
-            <Content onClick={handleChartClick} data={data} />
+            <Header />
+            <ContentBox>
+                <Sidebar data={data} />
+                <Content onClick={handleChartClick} data={data} />
+            </ContentBox>
         </Box>
     )
 })

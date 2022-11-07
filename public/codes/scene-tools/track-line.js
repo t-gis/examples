@@ -49,7 +49,7 @@ const line = new Map2d.TrackLine(viewer.camera, {
     autoFollowView: false
 });
 
-Sandcastle.addToggleButton("是否播放", viewer.shadows, function (
+Sandcastle.addToggleButton("是否播放", false, function (
     checked
 ) {
     if(checked) {
