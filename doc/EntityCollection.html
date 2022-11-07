@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EntityCollection - TGIS 文档</title>
+
+    <!--[if lt IE 9]>
+      <script src="javascript/html5.js"></script>
+    <![endif]-->
+    <link href="styles/jsdoc-default.css" rel="stylesheet">
+    <link href="styles/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">
+        <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
+        EntityCollection
+        <div class="titleCenterer"></div>
+    </h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+    <div class="nameContainer">
+    <h4 class="name" id="EntityCollection">
+        <a href="#EntityCollection" class="doc-link"></a>
+        new EntityCollection<span class="signature">(owner)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L8">dataSources/EntityCollection.js 8</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>owner</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Map2D.html">Map2D</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                此集合的创建者</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="add">
+        <a href="#add" class="doc-link"></a>
+        add<span class="signature">(entity)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L20">dataSources/EntityCollection.js 20</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    将实体添加到集合中
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Entity.html">Entity</a></span>
+|
+
+<span class="param-type"><a href="Entity.html#.ConstructorOptions">Entity.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                要添加的实体</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    添加的实体
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="contains">
+        <a href="#contains" class="doc-link"></a>
+        contains<span class="signature">(entity)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L39">dataSources/EntityCollection.js 39</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    判断实体是否在集合中
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Entity.html">Entity</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                要判断的实体</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    如果包含则为 true, 否则为 false
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="getById">
+        <a href="#getById" class="doc-link"></a>
+        getById<span class="signature">(id)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L48">dataSources/EntityCollection.js 48</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据实体 id 获取实体
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                实体 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    对应的实体或 undefined
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="remove">
+        <a href="#remove" class="doc-link"></a>
+        remove<span class="signature">(entity)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L57">dataSources/EntityCollection.js 57</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    移除实体
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Entity.html">Entity</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                要移除的实体</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    成功移除则返回 true, 否则返回 false
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="removeAll">
+        <a href="#removeAll" class="doc-link"></a>
+        removeAll<span class="signature">()</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L79">dataSources/EntityCollection.js 79</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    移除所有实体
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="removeById">
+        <a href="#removeById" class="doc-link"></a>
+        removeById<span class="signature">(id)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L67">dataSources/EntityCollection.js 67</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据实体 id 移除实体
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                实体 id</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    成功移除则返回 true, 否则返回 false
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    <!-- <div class="help">
+        Need help? The fastest way to get answers is from the community and team on the <a href="https://community.cesium.com/">Cesium Forum</a>.
+    </div> -->
+
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+    </footer>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
+        <ul id="ClassList"><li data-name="addFeatrueInfo"><a href="global.html#addFeatrueInfo">addFeatrueInfo</a></li><li data-name="addVectorEventListener"><a href="global.html#addVectorEventListener">addVectorEventListener</a></li><li data-name="AssociativeArray"><a href="AssociativeArray.html">AssociativeArray</a></li><li data-name="BaseControl"><a href="BaseControl.html">BaseControl</a></li><li data-name="BaseDataSource"><a href="BaseDataSource.html">BaseDataSource</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="CustomDataSource"><a href="CustomDataSource.html">CustomDataSource</a></li><li data-name="CustomProjection"><a href="CustomProjection.html">CustomProjection</a></li><li data-name="CustomTilingScheme"><a href="CustomTilingScheme.html">CustomTilingScheme</a></li><li data-name="DataSource"><a href="DataSource.html">DataSource</a></li><li data-name="DataSourceCollection"><a href="DataSourceCollection.html">DataSourceCollection</a></li><li data-name="DeveloperError"><a href="DeveloperError.html">DeveloperError</a></li><li data-name="DrawAngleAttr"><a href="DrawAngleAttr.html">DrawAngleAttr</a></li><li data-name="DrawAngleHandler"><a href="DrawAngleHandler.html">DrawAngleHandler</a></li><li data-name="DrawBaseAttr"><a href="DrawBaseAttr.html">DrawBaseAttr</a></li><li data-name="DrawBaseHandler"><a href="DrawBaseHandler.html">DrawBaseHandler</a></li><li data-name="DrawCircleAttr"><a href="DrawCircleAttr.html">DrawCircleAttr</a></li><li data-name="DrawCircleHandler"><a href="DrawCircleHandler.html">DrawCircleHandler</a></li><li data-name="DrawHandler"><a href="DrawHandler.html">DrawHandler</a></li><li data-name="DrawPointAttr"><a href="DrawPointAttr.html">DrawPointAttr</a></li><li data-name="DrawPointHandler"><a href="DrawPointHandler.html">DrawPointHandler</a></li><li data-name="DrawPolygonAttr"><a href="DrawPolygonAttr.html">DrawPolygonAttr</a></li><li data-name="DrawPolygonHandler"><a href="DrawPolygonHandler.html">DrawPolygonHandler</a></li><li data-name="DrawPolylineAttr"><a href="DrawPolylineAttr.html">DrawPolylineAttr</a></li><li data-name="DrawPolylineHandler"><a href="DrawPolylineHandler.html">DrawPolylineHandler</a></li><li data-name="DrawRectangleAttr"><a href="DrawRectangleAttr.html">DrawRectangleAttr</a></li><li data-name="DrawRectangleHandler"><a href="DrawRectangleHandler.html">DrawRectangleHandler</a></li><li data-name="DrawSquareAttr"><a href="DrawSquareAttr.html">DrawSquareAttr</a></li><li data-name="DrawSquareHandler"><a href="DrawSquareHandler.html">DrawSquareHandler</a></li><li data-name="DrawType"><a href="global.html#DrawType">DrawType</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="EventCallback"><a href="EventCallback.html">EventCallback</a></li><li data-name="EventCollection"><a href="EventCollection.html">EventCollection</a></li><li data-name="Events"><a href="Events.html">Events</a></li><li data-name="GeographicProjection"><a href="GeographicProjection.html">GeographicProjection</a></li><li data-name="GeoJsonDataSource"><a href="GeoJsonDataSource.html">GeoJsonDataSource</a></li><li data-name="getGroupMarkByID"><a href="global.html#getGroupMarkByID">getGroupMarkByID</a></li><li data-name="getMarkByID"><a href="global.html#getMarkByID">getMarkByID</a></li><li data-name="Globe"><a href="Globe.html">Globe</a></li><li data-name="Graphics"><a href="Graphics.html">Graphics</a></li><li data-name="ImageryLayerCollection"><a href="ImageryLayerCollection.html">ImageryLayerCollection</a></li><li data-name="ImageryProvider"><a href="ImageryProvider.html">ImageryProvider</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="Map2D"><a href="Map2D.html">Map2D</a></li><li data-name="Map2d"><a href="global.html#Map2d">Map2d</a></li><li data-name="MapProjection"><a href="MapProjection.html">MapProjection</a></li><li data-name="MeasureHandler"><a href="MeasureHandler.html">MeasureHandler</a></li><li data-name="MeasureType"><a href="global.html#MeasureType">MeasureType</a></li><li data-name="MousePositionControl"><a href="MousePositionControl.html">MousePositionControl</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Rectangle"><a href="Rectangle.html">Rectangle</a></li><li data-name="ScaleLineControl"><a href="ScaleLineControl.html">ScaleLineControl</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="ScreenSpaceEventHandler"><a href="ScreenSpaceEventHandler.html">ScreenSpaceEventHandler</a></li><li data-name="ScreenSpaceEventType"><a href="global.html#ScreenSpaceEventType">ScreenSpaceEventType</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TilingScheme"><a href="TilingScheme.html">TilingScheme</a></li><li data-name="TrackLine"><a href="TrackLine.html">TrackLine</a></li><li data-name="TranslateControl"><a href="TranslateControl.html">TranslateControl</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorProjection"><a href="WebMercatorProjection.html">WebMercatorProjection</a></li><li data-name="ZoomSliderControl"><a href="ZoomSliderControl.html">ZoomSliderControl</a></li></ul>
+    </div>
+</div>
+
+<script>
+if (window.frameElement) {
+    document.body.className = 'embedded';
+
+    var ele = document.createElement('a');
+    ele.className = 'popout';
+    ele.target = '_blank';
+    ele.href = window.location.href;
+    ele.title = 'Pop out';
+    document.getElementById('main').appendChild(ele);
+}
+
+// Set targets on external links.  Sandcastle and GitHub shouldn't be embedded in any iframe.
+Array.prototype.forEach.call(document.getElementsByTagName('a'), function(a) {
+    if (/^https?:/i.test(a.getAttribute('href'))) {
+        a.target='_blank';
+    }
+});
+</script>
+
+<script src="javascript/prism.js"></script>
+<script src="javascript/cesiumDoc.js"></script>
+
+</body>
+</html>
