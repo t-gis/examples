@@ -55,7 +55,7 @@ const Home = memo(() => {
                         { title: "天地图蓝色底图", url: "./codes/layers/tianditu-blue.js", image: "layers/tianditu-blue.png" },
                         { title: "天地图白色底图", url: "./codes/layers/tianditu-warm.js", image: "layers/tianditu-warm.png" },
                         { title: "超图白色底图(深圳)", url: "./codes/layers/supermap-warm.js", image: "layers/supermap-warm.png" },
-                        { title: "超图白蓝底图(深圳)", url: "./codes/layers/supermap-blue.js", image: "layers/supermap-blue.png" },
+                        { title: "超图蓝色底图(深圳)", url: "./codes/layers/supermap-blue.js", image: "layers/supermap-blue.png" },
                     ]
                 },
                 {
