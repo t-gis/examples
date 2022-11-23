@@ -17,8 +17,11 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
                 <head>
                     <script src="./Sandcastle-header.js"></script>
                     <link rel="stylesheet" href="./Sandcastle-header.css" />
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.1.0/ol.css" />
-                    <script src="https://cdn.jsdelivr.net/npm/ol@7.1.0/dist/ol.js"></script>
+                    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.1.0/ol.css" /> -->
+                    <!-- <script src="https://cdn.jsdelivr.net/npm/ol@7.1.0/dist/ol.js"></script> -->
+
+                    <link rel="stylesheet" href="./openlayers/v7.1.0/ol.css" />
+                    <script src="./openlayers/v7.1.0/ol.js"></script>
                     <script src="./map2d.iife.js"></script>
                     <style>
                         *, html, body {

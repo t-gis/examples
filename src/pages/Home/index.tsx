@@ -97,6 +97,12 @@ const Home = memo(() => {
                         { title: "绘制工具", url: "./codes/scene-tools/draw.js", image: "scene-tools/draw.gif" },
                         { title: "轨迹回放", url: "./codes/scene-tools/track-line.js", image: "scene-tools/track-line.gif" },
                     ]
+                },
+                {
+                    title: "弹出层",
+                    list: [
+                        { title: "弹窗", url: "./codes/scene-tools/popup.js", image: "scene-tools/popup.png" }
+                    ]
                 }
             ]
         },
