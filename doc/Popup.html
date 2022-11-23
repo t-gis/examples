@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Camera - TGIS 文档</title>
+    <title>Popup - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        Camera
+        Popup
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="Camera">
-        <a href="#Camera" class="doc-link"></a>
-        new Camera<span class="signature">(owner)</span>
+    <h4 class="name" id="Popup">
+        <a href="#Popup" class="doc-link"></a>
+        new Popup<span class="signature">(options)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L6">scene/Camera.js 6</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L53">scene/Popup.js 53</a>
 </div> -->
 
 
@@ -89,13 +89,13 @@
 
         <tr>
             
-                <td class="name"><code>owner</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Map2D.html">Map2D</a></span>
+<span class="param-type"><a href="Popup.html#.ConstructorOptions">Popup.ConstructorOptions</a></span>
 
 
             
@@ -105,7 +105,7 @@
 
             <td class="description last">
             
-                创建者</td>
+                初始化参数</td>
         </tr>
 
     
@@ -146,6 +146,11 @@
     
 
     
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 创建弹窗位置const position = new Map2d.Position(114.0295, 22.609875);// 设置相机位置viewer.camera.flyTo({     destination: position})// 创建弹窗const popup = viewer.addPopup({     position: position,     offset: [0, 0],     html: `         &lt;div id='test' style='background: white;'>             &lt;header style='padding: 10px 20px; background: rgba(0,0,0,0.2)'>                 header             &lt;/header>             &lt;main style='padding: 20px;'>                 &lt;div>...contentcontentcontent&lt;/div>                 &lt;div>...contentcontentcontent&lt;/div>                 &lt;div>...contentcontentcontent&lt;/div>             &lt;/main>         &lt;/div>     `});// 设置位置// popup.position = new Map2d.Position(114.3295, 22.639875);// 设置偏移// popup.offset = [15, 15];// 销毁弹窗// popup.destroy()</code></pre>
+
+    
 
     
 
@@ -173,63 +178,31 @@
     
 
     
-
-    
-        <h3 class="subsection-title">Methods</h3>
+        <h3 class="subsection-title">Members</h3>
 
         
             
-    <div class="nameContainer">
-    <h4 class="name" id="computeViewRectangle">
-        <a href="#computeViewRectangle" class="doc-link"></a>
-        computeViewRectangle<span class="signature">()</span> &rarr; <span class="type-signature returnType">Array.&lt;Number></span>
-        
+<div class="nameContainer">
+<h4 class="name" id="offset">
+    <a href="#offset" class="doc-link"></a>
+    offset<span class="type-signature"> : Array.&lt;Number></span>
+    
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L31">scene/Camera.js 31</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L114">scene/Popup.js 114</a>
 </div> -->
 
 
-    </h4>
+</h4>
 
-    </div>
+</div>
 
-    
 
 
 <div class="description">
-    获取当前视口的左下角和右上角位置
+    获取或设置弹窗偏移
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    经纬度数组
-</div>
-
-
-    
 
 
 
@@ -254,9 +227,64 @@
     
 
     
-        <h5>Example:</h5>
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
         
-    <pre><code class="language-javascript">// 获取当前视口左下角和右上角组成的经纬度数组const extent = map2d.camera.computeViewRectangle()// [114.03302290725708, 22.613155727386474, 114.07297709274292, 22.646844272613524]console.log(extent)</code></pre>
+            
+<div class="nameContainer">
+<h4 class="name" id="position">
+    <a href="#position" class="doc-link"></a>
+    position<span class="type-signature"> : <a href="Position.html">Position</a></span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L101">scene/Popup.js 101</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置弹窗位置
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -273,15 +301,21 @@
 
 
         
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
             
     <div class="nameContainer">
-    <h4 class="name" id="fit">
-        <a href="#fit" class="doc-link"></a>
-        fit<span class="signature">(positions, <span class="optional">padding</span>)</span>
+    <h4 class="name" id="destroy">
+        <a href="#destroy" class="doc-link"></a>
+        destroy<span class="signature">()</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L51">scene/Camera.js 51</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L93">scene/Popup.js 93</a>
 </div> -->
 
 
@@ -293,7 +327,7 @@
 
 
 <div class="description">
-    根据经纬度数组数据调整合适的视角
+    销毁弹窗
 </div>
 
 
@@ -306,9 +340,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
     
 
-<table class="params">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".ConstructorOptions">
+    <a href="#.ConstructorOptions" class="doc-link"></a>
+    Popup.ConstructorOptions
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L1">scene/Popup.js 1</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
     <thead>
     <tr>
         
@@ -318,7 +433,9 @@
         <th>Type</th>
 
         
-        <th>Default</th>
+        <th>Attributes</th>
+        
+
         
 
         <th class="last">Description</th>
@@ -330,39 +447,70 @@
 
         <tr>
             
-                <td class="name"><code>positions</code></td>
+                <td class="name"><code>options.id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;Array.&lt;Number>></span>
+<span class="param-type">String</span>
 
 
             
             </td>
 
             
-                <td class="default">
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
                 
                 </td>
             
 
-            <td class="description last">
             
-                
-                
 
-                
-            
-                经纬度二维数组</td>
+            <td class="description last">唯一 id</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>padding</code></td>
+                <td class="name"><code>options.html</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">自定义内容，html 元素或 html 字符串</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options.position</code></td>
             
 
             <td class="type">
@@ -375,23 +523,49 @@
             </td>
 
             
-                <td class="default">
+                <td class="attributes">
                 
-                    <code class="language-javascript">[10,10,10,10]</code>
+                    &lt;optional><br>
+                
+
                 
                 </td>
             
 
-            <td class="description last">
+            
+
+            <td class="description last">位置</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options.offset</code></td>
+            
+
+            <td class="type">
             
                 
-                        <span class="optional">optional</span>
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
                 
+                    &lt;optional><br>
                 
 
                 
+                </td>
             
-                矩形视角内边距</td>
+
+            
+
+            <td class="description last">偏移量，单位是像素</td>
         </tr>
 
     
@@ -400,21 +574,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
     
 
     
@@ -430,11 +589,6 @@
     
 
     
-
-    
-        <h5>Example:</h5>
-        
-    <pre><code class="language-javascript">// 定义经纬度数组数据const positions = [    [114.03302290725708, 22.613155727386474],    [114.07297709274292, 22.646844272613524],    [114.053, 22.63]]// 调整视角map2d.camera.fit(positions, [50, 50, 50, 50])</code></pre>
 
     
 
@@ -450,407 +604,7 @@
 </dl>
 
 
-        
             
-    <div class="nameContainer">
-    <h4 class="name" id="flyTo">
-        <a href="#flyTo" class="doc-link"></a>
-        flyTo<span class="signature">(options)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L76">scene/Camera.js 76</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    设置相机位置
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                对象具有以下属性
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>destination</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Position.html">Position</a></span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                将要设置的位置信息</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>duration</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                动画的持续时间以毫秒为单位</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>complete</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                动画结束回调函数</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h5>Example:</h5>
-        
-    <pre><code class="language-javascript">// 创建终点const position = new Position(114.07291271972656, 22.646887187957763)// 调整视角map2d.camera.flyTo({    destination: position,    duration: 3000,    complete: () => {        console.log("complete")    }})</code></pre>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="setView">
-        <a href="#setView" class="doc-link"></a>
-        setView<span class="signature">(options)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L101">scene/Camera.js 101</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    设置相机位置
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                对象具有以下属性
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>destination</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Position.html">Position</a></span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                将要设置的位置信息</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h5>Example:</h5>
-        
-    <pre><code class="language-javascript">// 创建终点const position = new Position(114.07291271972656, 22.646887187957763)// 调整视角map2d.camera.setView({    destination: position,})</code></pre>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-
     
 
     
