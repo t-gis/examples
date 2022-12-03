@@ -79,7 +79,8 @@ const Home = memo(() => {
                     list: [
                         { title: "文字", url: "./codes/vector/entity-label.js", image: "vector/entity-label.png" },
                         { title: "图片", url: "./codes/vector/entity-billboard.js", image: "vector/entity-billboard.png" },
-                        { title: "Point", url: "./codes/vector/entity-point.js", image: "vector/entity-point.png" },
+                        { title: "点", url: "./codes/vector/entity-point.js", image: "vector/entity-point.png" },
+                        { title: "线", url: "./codes/vector/entity-polyline.js", image: "vector/entity-polyline.jpg" },
                         { title: "混合矢量", url: "./codes/vector/entity-mixin.js", image: "vector/entity-mixin.png" },
                     ]
                 }
