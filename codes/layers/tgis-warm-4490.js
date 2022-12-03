@@ -22,13 +22,13 @@ const view = new ol.View({
 });
 viewer.map.setView(view);
 
-// 加载规资局 4490 蓝色图层
+// 加载规资局 4490 白色图层
 const imageryProvider = new Map2d.WebMapTileServiceImageryProvider({
-    url: "http://10.223.178.107/api/t-gis/gw/OGC/Map/SZ_VEC_B4490/",
+    url: "http://10.223.178.107/api/t-gis/gw/OGC/Map/SZ_CVA_W4490/",
     tilingScheme: new Map2d.CustomTilingScheme({
         projection: new Map2d.CustomProjection({ code: "EPSG:4490" })
     }),
-    layer: encodeURI("Blue_shenzhen"),
+    layer: encodeURI("w_shenzhen"),
     tileMatrixSetID: encodeURI("EPSG:4490"),
     tileMatrixLabels: new Array(21).fill(0).map((item, index) => `EPSG:4490:${index}`),
     style: "default",
