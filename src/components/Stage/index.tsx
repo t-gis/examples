@@ -15,6 +15,8 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
             iframeDoc?.open();
             iframeDoc?.write(`
                 <head>
+                    <meta charset="UTF-8" />
+                    <meta http-equiv="Content-Security-Policy" content=""/>
                     <script src="./Sandcastle-header.js"></script>
                     <link rel="stylesheet" href="./Sandcastle-header.css" />
                     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.1.0/ol.css" /> -->
