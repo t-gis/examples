@@ -9,6 +9,11 @@ export default ({ mode }) => {
 
   return defineConfig({
     base: isGHPages ? "/examples/" : "./",
+    build: {
+      rollupOptions: {
+        external: ["esm.js", "js", "jsx", "tsx", "ts", "gif", "json", "png", "jpg", "jpeg"]
+      }
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, "src"),
