@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from "path";
+// import mkcert from 'vite-plugin-mkcert';
 
 export default ({ mode }) => {
 
@@ -13,6 +14,12 @@ export default ({ mode }) => {
         '@': path.resolve(__dirname, "src"),
       }
     },
-    plugins: [react()]
+    plugins: [
+      react(),
+      // mkcert()
+    ],
+    // server: {
+    //   https: true
+    // }
   })
 }

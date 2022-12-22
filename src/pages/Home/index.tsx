@@ -65,6 +65,7 @@ const Home = memo(() => {
                         { title: "天地图白色底图", url: "./codes/layers/tianditu-warm-1.js", image: "layers/tianditu-warm.png" },
                         { title: "规资蓝色底图", url: "./codes/layers/tgis-blue-4490.js", image: "layers/tgis-blue-4490.png" },
                         { title: "规资白色底图", url: "./codes/layers/tgis-warm-4490.js", image: "layers/tgis-warm-4490.png" },
+                        { title: "TGIS MVT图层", url: "./codes/layers/supermap-mvt.js", image: "layers/supermap-mvt.jpg" }
                     ]
                 }
             ]

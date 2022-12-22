@@ -16,7 +16,6 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
             iframeDoc?.write(`
                 <head>
                     <meta charset="UTF-8" />
-                    <meta http-equiv="Content-Security-Policy" content=""/>
                     <script src="./Sandcastle-header.js"></script>
                     <link rel="stylesheet" href="./Sandcastle-header.css" />
                     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@7.1.0/ol.css" /> -->
@@ -24,6 +23,7 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
 
                     <link rel="stylesheet" href="./openlayers/v7.1.0/ol.css" />
                     <script src="./openlayers/v7.1.0/ol.js"></script>
+
                     <script src="./map2d.iife.js"></script>
                     <style>
                         *, html, body {
