@@ -46,7 +46,7 @@
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L34">service/TianDiService.js 34</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L51">service/TianDiService.js 51</a>
 </div> -->
 
 
@@ -152,7 +152,7 @@
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L118">service/TianDiService.js 118</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L178">service/TianDiService.js 178</a>
 </div> -->
 
 
@@ -350,13 +350,367 @@
         
             
     <div class="nameContainer">
+    <h4 class="name" id=".queryPOI">
+        <a href="#.queryPOI" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TianDiService.queryPOI<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TianDiService.html#.QueryPOIResponse">TianDiService.QueryPOIResponse</a>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L211">service/TianDiService.js 211</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据条件查询 POI
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>keyword</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                关键字</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>level</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">12</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                查询的级别, 1~20</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>region</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">'113.751647,22.400047,114.622924,22.855425'</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                查询的地图范围, 默认是深圳市范围</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
     <h4 class="name" id=".regeo">
         <a href="#.regeo" class="doc-link"></a>
         <span class="type-signature attribute-static">static</span> TianDiService.regeo<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TianDiService.html#.RegeoResponse">TianDiService.RegeoResponse</a>></span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L136">service/TianDiService.js 136</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L196">service/TianDiService.js 196</a>
 </div> -->
 
 
@@ -825,6 +1179,381 @@
             
 
             <td class="description last">纬度</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".POIEntity">
+    <a href="#.POIEntity" class="doc-link"></a>
+    TianDiService.POIEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L30">service/TianDiService.js 30</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>eaddress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">英文地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ename</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">英文名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">纬度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>phone</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">联系电话</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOIResponse">
+    <a href="#.QueryPOIResponse" class="doc-link"></a>
+    TianDiService.QueryPOIResponse
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L41">service/TianDiService.js 41</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">总数</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="TianDiService.html#.POIEntity">TianDiService.POIEntity</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">POI 结果集</td>
         </tr>
 
     
