@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TianDiService - TGIS 文档</title>
+
+    <!--[if lt IE 9]>
+      <script src="javascript/html5.js"></script>
+    <![endif]-->
+    <link href="styles/jsdoc-default.css" rel="stylesheet">
+    <link href="styles/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">
+        <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
+        TianDiService
+        <div class="titleCenterer"></div>
+    </h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+    <div class="nameContainer">
+    <h4 class="name" id="TianDiService">
+        <a href="#TianDiService" class="doc-link"></a>
+        new TianDiService<span class="signature">()</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L29">service/TianDiService.js 29</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="BaseService.html">BaseService</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".geo">
+        <a href="#.geo" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TianDiService.geo<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TianDiService.html#.GeoResponse">TianDiService.GeoResponse</a>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L111">service/TianDiService.js 111</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                地址</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">Map2d.Service.TianDiService.geo({ address: "深圳" }).then(res => {     console.log(res)})</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".regeo">
+        <a href="#.regeo" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TianDiService.regeo<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TianDiService.html#.RegeoResponse">TianDiService.RegeoResponse</a>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L129">service/TianDiService.js 129</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    逆地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                纬度</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">Map2d.Service.TianDiService.regeo({ lng: 120, lat: 32 }).then(res => {     console.log(res)})</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".GeoResponse">
+    <a href="#.GeoResponse" class="doc-link"></a>
+    TianDiService.GeoResponse
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L3">service/TianDiService.js 3</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类别名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">纬度</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".RegeoResponse">
+    <a href="#.RegeoResponse" class="doc-link"></a>
+    TianDiService.RegeoResponse
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TianDiService.js#L11">service/TianDiService.js 11</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>fullAddress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">全称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">短称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>distince</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">与此点的距离</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">与此点的方向</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>country</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">国家</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>province</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">省</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>city</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">市</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>district</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">区</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>street</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">街道</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">昵称</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    <!-- <div class="help">
+        Need help? The fastest way to get answers is from the community and team on the <a href="https://community.cesium.com/">Cesium Forum</a>.
+    </div> -->
+
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+    </footer>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
+        <ul id="ClassList"><li data-name="ArcGisMapServerImageryProvider"><a href="ArcGisMapServerImageryProvider.html">ArcGisMapServerImageryProvider</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="Cartesian2"><a href="Cartesian2.html">Cartesian2</a></li><li data-name="Cartesian3"><a href="Cartesian3.html">Cartesian3</a></li><li data-name="Cartographic"><a href="Cartographic.html">Cartographic</a></li><li data-name="Color"><a href="Color.html">Color</a></li><li data-name="ControlCollection"><a href="ControlCollection.html">ControlCollection</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="Format"><a href="Format.html">Format</a></li><li data-name="GeographicTilingScheme"><a href="GeographicTilingScheme.html">GeographicTilingScheme</a></li><li data-name="GMLFormat"><a href="GMLFormat.html">GMLFormat</a></li><li data-name="ImagerySplit"><a href="ImagerySplit.html">ImagerySplit</a></li><li data-name="JulianDate"><a href="JulianDate.html">JulianDate</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="LabelStyle"><a href="global.html#LabelStyle">LabelStyle</a></li><li data-name="Map3D"><a href="Map3D.html">Map3D</a></li><li data-name="MaterialProperty"><a href="MaterialProperty.html">MaterialProperty</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolygonGraphics"><a href="PolygonGraphics.html">PolygonGraphics</a></li><li data-name="PolygonHierarchy"><a href="PolygonHierarchy.html">PolygonHierarchy</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="SingleTileImageryProvider"><a href="SingleTileImageryProvider.html">SingleTileImageryProvider</a></li><li data-name="SupermapImageryProvider"><a href="SupermapImageryProvider.html">SupermapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TopolAnalysis"><a href="TopolAnalysis.html">TopolAnalysis</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorTilingScheme"><a href="WebMercatorTilingScheme.html">WebMercatorTilingScheme</a></li></ul>
+    </div>
+</div>
+
+<script>
+if (window.frameElement) {
+    document.body.className = 'embedded';
+
+    var ele = document.createElement('a');
+    ele.className = 'popout';
+    ele.target = '_blank';
+    ele.href = window.location.href;
+    ele.title = 'Pop out';
+    document.getElementById('main').appendChild(ele);
+}
+
+// Set targets on external links.  Sandcastle and GitHub shouldn't be embedded in any iframe.
+Array.prototype.forEach.call(document.getElementsByTagName('a'), function(a) {
+    if (/^https?:/i.test(a.getAttribute('href'))) {
+        a.target='_blank';
+    }
+});
+</script>
+
+<script src="javascript/prism.js"></script>
+<script src="javascript/cesiumDoc.js"></script>
+
+</body>
+</html>

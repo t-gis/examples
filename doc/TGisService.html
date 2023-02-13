@@ -1,0 +1,6198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TGisService - TGIS 文档</title>
+
+    <!--[if lt IE 9]>
+      <script src="javascript/html5.js"></script>
+    <![endif]-->
+    <link href="styles/jsdoc-default.css" rel="stylesheet">
+    <link href="styles/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">
+        <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
+        TGisService
+        <div class="titleCenterer"></div>
+    </h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+    <div class="nameContainer">
+    <h4 class="name" id="TGisService">
+        <a href="#TGisService" class="doc-link"></a>
+        new TGisService<span class="signature">()</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L106">service/TGisService.js 106</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="BaseService.html">BaseService</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".geo">
+        <a href="#.geo" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.geo<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.Geo">TGisService.Geo</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L411">service/TGisService.js 411</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                地址</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".queryPOIByRegion">
+        <a href="#.queryPOIByRegion" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.queryPOIByRegion<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOIByRegion">TGisService.QueryPOIByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L165">service/TGisService.js 165</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围统计POI信息
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".queryPOIListByRegion">
+        <a href="#.queryPOIListByRegion" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.queryPOIListByRegion<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOIListByRegion">TGisService.QueryPOIListByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L315">service/TGisService.js 315</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围查询POI列表
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".queryPOITypesAndNumByRegion">
+        <a href="#.queryPOITypesAndNumByRegion" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.queryPOITypesAndNumByRegion<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOITypesAndNumByRegion">TGisService.QueryPOITypesAndNumByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L257">service/TGisService.js 257</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围统计POI的类型和数量
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".queryPOITypesByRegion">
+        <a href="#.queryPOITypesByRegion" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.queryPOITypesByRegion<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.QueryPOITypesByRegionEntity">TGisService.QueryPOITypesByRegionEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L208">service/TGisService.js 208</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围查询POI的类型
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".regeo">
+        <a href="#.regeo" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.regeo<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.RegeoEntity">TGisService.RegeoEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L359">service/TGisService.js 359</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    逆地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                纬度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">"building"</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".search">
+        <a href="#.search" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> TGisService.search<span class="signature">(options, serviceOptions)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.SearchEntity">TGisService.SearchEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L461">service/TGisService.js 461</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    地址地名模糊检索
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serviceOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BaseService.html#.ConstructorOptions">BaseService.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化服务对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="geo">
+        <a href="#geo" class="doc-link"></a>
+        geo<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.Geo">TGisService.Geo</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L370">service/TGisService.js 370</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                地址</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="queryPOIByRegion">
+        <a href="#queryPOIByRegion" class="doc-link"></a>
+        queryPOIByRegion<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOIByRegion">TGisService.QueryPOIByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L119">service/TGisService.js 119</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围统计POI信息
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="queryPOIListByRegion">
+        <a href="#queryPOIListByRegion" class="doc-link"></a>
+        queryPOIListByRegion<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOIListByRegion">TGisService.QueryPOIListByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L269">service/TGisService.js 269</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围查询POI列表
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="queryPOITypesAndNumByRegion">
+        <a href="#queryPOITypesAndNumByRegion" class="doc-link"></a>
+        queryPOITypesAndNumByRegion<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;<a href="TGisService.html#.QueryPOITypesAndNumByRegion">TGisService.QueryPOITypesAndNumByRegion</a>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L220">service/TGisService.js 220</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围统计POI的类型和数量
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="queryPOITypesByRegion">
+        <a href="#queryPOITypesByRegion" class="doc-link"></a>
+        queryPOITypesByRegion<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.QueryPOITypesByRegionEntity">TGisService.QueryPOITypesByRegionEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L177">service/TGisService.js 177</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据空间范围查询POI的类型
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>geom</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                空间范围, WKT 文本</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="regeo">
+        <a href="#regeo" class="doc-link"></a>
+        regeo<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.RegeoEntity">TGisService.RegeoEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L329">service/TGisService.js 329</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    逆地理编码
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                纬度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">"building"</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">1</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">10</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="search">
+        <a href="#search" class="doc-link"></a>
+        search<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise.&lt;<a href="TGisService.html#.Response">TGisService.Response</a>.&lt;Array.&lt;<a href="TGisService.html#.SearchEntity">TGisService.SearchEntity</a>>>></span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L423">service/TGisService.js 423</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    地址地名模糊检索
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                页大小</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".Geo">
+    <a href="#.Geo" class="doc-link"></a>
+    TGisService.Geo
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L87">service/TGisService.js 87</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>total</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">总数</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="TGisService.html#.GeoEntity">TGisService.GeoEntity</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">地点数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".GeoEntity">
+    <a href="#.GeoEntity" class="doc-link"></a>
+    TGisService.GeoEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L76">service/TGisService.js 76</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">唯一标识</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shortName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">简称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>nickName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">昵称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">邮编</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">纬度</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOIByRegion">
+    <a href="#.QueryPOIByRegion" class="doc-link"></a>
+    TGisService.QueryPOIByRegion
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L22">service/TGisService.js 22</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">页大小</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>total</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">总数</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="TGisService.html#.QueryPOIByRegionEntity">TGisService.QueryPOIByRegionEntity</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">POI 信息数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOIByRegionEntity">
+    <a href="#.QueryPOIByRegionEntity" class="doc-link"></a>
+    TGisService.QueryPOIByRegionEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L10">service/TGisService.js 10</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">唯一标识</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>viceTypeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">副类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>viceTypeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">副类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subTypeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">子类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subTypeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">子类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>geometry</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">几何数据，geojson 字符串</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOIListByRegion">
+    <a href="#.QueryPOIListByRegion" class="doc-link"></a>
+    TGisService.QueryPOIListByRegion
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L59">service/TGisService.js 59</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">页码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">页大小</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>total</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">总数</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="TGisService.html#.QueryPOIListByRegionEntity">TGisService.QueryPOIListByRegionEntity</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">POI 信息数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOIListByRegionEntity">
+    <a href="#.QueryPOIListByRegionEntity" class="doc-link"></a>
+    TGisService.QueryPOIListByRegionEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L47">service/TGisService.js 47</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">唯一标识</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>viceTypeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">副类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>viceTypeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">副类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subTypeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">子类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>subTypeCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">子类型编码</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>geometry</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">几何数据，geojson 字符串</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOITypesAndNumByRegion">
+    <a href="#.QueryPOITypesAndNumByRegion" class="doc-link"></a>
+    TGisService.QueryPOITypesAndNumByRegion
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L41">service/TGisService.js 41</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>list</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="TGisService.html#.QueryPOITypesAndNumByRegionEntity">TGisService.QueryPOITypesAndNumByRegionEntity</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">POI 信息数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>total</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">总数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOITypesAndNumByRegionEntity">
+    <a href="#.QueryPOITypesAndNumByRegionEntity" class="doc-link"></a>
+    TGisService.QueryPOITypesAndNumByRegionEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L36">service/TGisService.js 36</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>num</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型数量</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".QueryPOITypesByRegionEntity">
+    <a href="#.QueryPOITypesByRegionEntity" class="doc-link"></a>
+    TGisService.QueryPOITypesByRegionEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L30">service/TGisService.js 30</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型编码</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".RegeoEntity">
+    <a href="#.RegeoEntity" class="doc-link"></a>
+    TGisService.RegeoEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L67">service/TGisService.js 67</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">唯一标识</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fullName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">完整名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lng</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">经度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">纬度</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".Response">
+    <a href="#.Response" class="doc-link"></a>
+    TGisService.Response
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L3">service/TGisService.js 3</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">响应码 200 为成功，其它为失败</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">响应消息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">响应数据</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+<div class="nameContainer">
+<h4 class="name" id=".SearchEntity">
+    <a href="#.SearchEntity" class="doc-link"></a>
+    TGisService.SearchEntity
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/service/TGisService.js#L93">service/TGisService.js 93</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">唯一标识</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>typeName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">类型名称</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>address</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">地址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>geometry</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">几何数据，geojson 字符串</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    <!-- <div class="help">
+        Need help? The fastest way to get answers is from the community and team on the <a href="https://community.cesium.com/">Cesium Forum</a>.
+    </div> -->
+
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+    </footer>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
+        <ul id="ClassList"><li data-name="ArcGisMapServerImageryProvider"><a href="ArcGisMapServerImageryProvider.html">ArcGisMapServerImageryProvider</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="Cartesian2"><a href="Cartesian2.html">Cartesian2</a></li><li data-name="Cartesian3"><a href="Cartesian3.html">Cartesian3</a></li><li data-name="Cartographic"><a href="Cartographic.html">Cartographic</a></li><li data-name="Color"><a href="Color.html">Color</a></li><li data-name="ControlCollection"><a href="ControlCollection.html">ControlCollection</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="Format"><a href="Format.html">Format</a></li><li data-name="GeographicTilingScheme"><a href="GeographicTilingScheme.html">GeographicTilingScheme</a></li><li data-name="GMLFormat"><a href="GMLFormat.html">GMLFormat</a></li><li data-name="ImagerySplit"><a href="ImagerySplit.html">ImagerySplit</a></li><li data-name="JulianDate"><a href="JulianDate.html">JulianDate</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="LabelStyle"><a href="global.html#LabelStyle">LabelStyle</a></li><li data-name="Map3D"><a href="Map3D.html">Map3D</a></li><li data-name="MaterialProperty"><a href="MaterialProperty.html">MaterialProperty</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolygonGraphics"><a href="PolygonGraphics.html">PolygonGraphics</a></li><li data-name="PolygonHierarchy"><a href="PolygonHierarchy.html">PolygonHierarchy</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="SingleTileImageryProvider"><a href="SingleTileImageryProvider.html">SingleTileImageryProvider</a></li><li data-name="SupermapImageryProvider"><a href="SupermapImageryProvider.html">SupermapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TopolAnalysis"><a href="TopolAnalysis.html">TopolAnalysis</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorTilingScheme"><a href="WebMercatorTilingScheme.html">WebMercatorTilingScheme</a></li></ul>
+    </div>
+</div>
+
+<script>
+if (window.frameElement) {
+    document.body.className = 'embedded';
+
+    var ele = document.createElement('a');
+    ele.className = 'popout';
+    ele.target = '_blank';
+    ele.href = window.location.href;
+    ele.title = 'Pop out';
+    document.getElementById('main').appendChild(ele);
+}
+
+// Set targets on external links.  Sandcastle and GitHub shouldn't be embedded in any iframe.
+Array.prototype.forEach.call(document.getElementsByTagName('a'), function(a) {
+    if (/^https?:/i.test(a.getAttribute('href'))) {
+        a.target='_blank';
+    }
+});
+</script>
+
+<script src="javascript/prism.js"></script>
+<script src="javascript/cesiumDoc.js"></script>
+
+</body>
+</html>
