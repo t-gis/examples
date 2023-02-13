@@ -1,42 +1,62 @@
-import * as Map3d from "map3d";
-// 注意 ！！！
-// 注意 ！！！
-// 注意 ！！！
-// 使用 mvt 图层时，需要引入 supermap 插件
+import * as Map2d from "map2d";
 
-/**
- * 1、在 Cesium.js 之前引入 ./Cesium/ThirdParty/supermap/Supermap.iife.js
- * 2、如果在 iframe 下开发，紧接着需加入 window.top.Supermap = window.Supermap;
- */
+const uri = "http://10.223.178.107/api/t-gis/tdtd";
 
-// 放大到深圳边界视图
-Map3d.Camera.DEFAULT_VIEW_RECTANGLE = new Cesium.Rectangle(
-    1.983072268381204,
-    0.3873200001523347,
-    2.0013747592286615,
-    0.39987761942571864
-);
-Map3d.Camera.DEFAULT_VIEW_FACTOR = 0;
-
-// 创建地球
-const viewer = new Map3d.Viewer("map");
-
-// 拾取 mvt 图层属性时要开启深度检测
-viewer.scene.globe.depthTestAgainstTerrain = true;
-
-// 加载 mvt 图层
-const url = "http://121.37.97.131:8090/iserver/services/map-TGIS/restjsr/v1/vectortile/maps/LINK_MARS";
-viewer.scene.addVectorTilesMap({
-    url: url,
-    canvasWidth: 512,
-    name: 'testMVT',
-    viewer: viewer
+const vec_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk="
 });
 
-// 拾取 mvt 图层属性
-viewer.selectedEntityChanged.addEventListener(function (entity) {
-    if (entity) {
-        const props = entity.properties.getValue(Cesium.JulianDate.now())
-        console.log("props:", props);
+const cva_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="
+});
+
+// 创建地图
+const viewer = new Map2d.Viewer("map");
+
+// 添加天地图图层
+viewer.imageryLayers.addImageryProvider(vec_w);
+viewer.imageryLayers.addImageryProvider(cva_w);
+
+// 定位到深圳
+viewer.camera.flyTo({
+    destination: new Map2d.Position(114.06, 22.54)
+});
+
+const map = viewer.map;
+
+// 添加 mvt 图层
+// 1、准备 style URL
+const styleURL = "http://10.223.178.107/api/t-gis/iserver/services/map-TGIS_Static/restjsr/v1/vectortile/maps/道路路网/style.json";
+
+// 2、创建 mapbox style
+const style = new ol.supermap.MapboxStyles({
+    style: encodeURI(styleURL),
+    map: map
+});
+
+// 3、load style
+style.on("styleloaded", () => {
+    vectorLayer = new ol.layer.VectorTile({
+        declutter: true,
+        source: new ol.source.VectorTileSuperMapRest({
+            style: encodeURI(styleURL),
+            projection: 'EPSG:4326',
+            format: new ol.format.MVT({
+                featureClass: ol.Feature
+            })
+        }),
+        style: style.getStyleFunction()
+    });
+    map.addLayer(vectorLayer);
+})
+
+// 4、get properties
+map.on('pointermove', function (e) {
+    const features = map.getFeaturesAtPixel(e.pixel);
+    if (!features || features.length === 0) {
+        return;
     }
+
+    const props = features[0].getProperties()
+    console.log("props:", props);
 });

@@ -1,4 +1,4 @@
-import * as Map3d from "map3d";
+import * as Map2d from "map2d";
 
 // 创建 osm 图层
 const osm = new ol.layer.Tile({

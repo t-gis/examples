@@ -1,40 +1,46 @@
-import * as Map3d from "map3d";
+import * as Map2d from "map2d";
 
-// 创建地球
-const viewer = new Map3d.Viewer("map");
+const key = "4f8dc07442f4aad13d055fec8d01b4c8";
+const uri = "http://t{0-7}.tianditu.gov.cn";
 
-const token = "8c451574e69800c7fee48a6d4ecfbdb7";
-const tdtUrl = 'https://t{s}.tianditu.gov.cn/';
-const subdomains = ['0', '1', '2', '3', '4', '5', '6', '7'];
-
-// 底图
-const img_w = new Map3d.UrlTemplateImageryProvider({
-    url: tdtUrl + 'DataServer?T=img_w&x={x}&y={y}&l={z}&tk=' + token,
-    subdomains,
-    tilingScheme: new Map3d.WebMercatorTilingScheme(),
-    maximumLevel: 18
+const vec_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=" + key + ""
 });
 
-// 注记
-const cia_w = new Map3d.UrlTemplateImageryProvider({
-    url: tdtUrl + 'DataServer?T=cia_w&x={x}&y={y}&l={z}&tk=' + token,
-    subdomains,
-    tilingScheme: new Map3d.WebMercatorTilingScheme(),
-    maximumLevel: 18
+const cva_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk=" + key + ""
 });
-viewer.imageryLayers.addImageryProvider(img_w);
-viewer.imageryLayers.addImageryProvider(cia_w);
+
+// 创建地图
+const viewer = new Map2d.Viewer("map");
+viewer.imageryLayers.addImageryProvider(vec_w);
+viewer.imageryLayers.addImageryProvider(cva_w);
 
 // 创建 entity
-const entity = new Map3d.Entity({
-    position: Map3d.Cartesian3.fromDegrees(114.06, 22.54),
+const entity = new Map2d.Entity({
+    position: new Map2d.Position(114.06, 22.54),
     point: {
-        pixelSize: 20,
-        color: Map3d.Color.BLUE
+        pixelSize: 10,
+        color: "blue"
     }
 });
 viewer.entities.add(entity);
 viewer.flyTo(entity);
+
+// 绑定 click 事件
+entity.point.on("click", (e) => {
+    console.log("handle entity click:", e);
+});
+
+// 绑定 mouseover 事件
+entity.point.on("mouseover", (e) => {
+    console.log("handle entity mouseover:", e);
+});
+
+// 绑定 mouseout 事件
+entity.point.on("mouseout", (e) => {
+    console.log("handle entity mouseout:", e);
+});
 
 // 窗口元素事件交互
 Sandcastle.addToggleButton("是否显示", true, function (

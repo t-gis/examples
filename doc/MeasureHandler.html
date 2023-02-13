@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeasureHandler - TGIS 文档</title>
+
+    <!--[if lt IE 9]>
+      <script src="javascript/html5.js"></script>
+    <![endif]-->
+    <link href="styles/jsdoc-default.css" rel="stylesheet">
+    <link href="styles/prism.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">
+        <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
+        MeasureHandler
+        <div class="titleCenterer"></div>
+    </h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+
+    
+        
+    <div class="nameContainer">
+    <h4 class="name" id="MeasureHandler">
+        <a href="#MeasureHandler" class="doc-link"></a>
+        new MeasureHandler<span class="signature">(viewer, options)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L41">core/MeasureHandler/index.js 41</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>viewer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Viewer.html">Viewer</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="MeasureHandler.html#.ConstructorOptions">MeasureHandler.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                初始化对象参数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 创建测量处理器const measureHandler = new Map2d.MeasureHandler(viewer);// 开始测量measureHandler.start({ type: Map2d.DrawType.ANGLE });// 绑定测量监听measureHandler.on("end", (e) => {     console.log("end e:", e.target.getCoordinates());})</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="addHandler">
+        <a href="#addHandler" class="doc-link"></a>
+        addHandler<span class="signature">(drawType, Clazz)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L55">core/MeasureHandler/index.js 55</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    添加测量处理器
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>drawType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#DrawType">DrawType</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>Clazz</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Class</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="destroy">
+        <a href="#destroy" class="doc-link"></a>
+        destroy<span class="signature">()</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L172">core/MeasureHandler/index.js 172</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    销毁测量
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="end">
+        <a href="#end" class="doc-link"></a>
+        end<span class="signature">()</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L163">core/MeasureHandler/index.js 163</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    结束测量
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="getHandler">
+        <a href="#getHandler" class="doc-link"></a>
+        getHandler<span class="signature">(drawType)</span> &rarr; <span class="type-signature returnType">DrawHandlerClass</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L64">core/MeasureHandler/index.js 64</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    获取测量处理器
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>drawType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#DrawType">DrawType</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    测量处理器
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="on">
+        <a href="#on" class="doc-link"></a>
+        on<span class="signature">(type, listener)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L189">core/MeasureHandler/index.js 189</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    绑定事件监听
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                事件类型 "start"|"change"|"end"|"destroy"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="MeasureHandler.html#.onCallback">MeasureHandler.onCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                回调函数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="start">
+        <a href="#start" class="doc-link"></a>
+        start<span class="signature">(options)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L142">core/MeasureHandler/index.js 142</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    开始测量
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                具有以下属性
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>markerSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">6</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                绘制点大小, 单位为像素</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markerColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">"#0099ff"</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                绘制点颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>stroke</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">"tomato"</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                绘制线颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strokeWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">2</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                绘制线宽度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fill</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">"rgba(255, 255, 0, 0.3)"</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                绘制填充颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#DrawType">DrawType</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">DrawType.POINT</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                测量类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>resultFormatter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                格式化结果</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="un">
+        <a href="#un" class="doc-link"></a>
+        un<span class="signature">(type, listener)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L200">core/MeasureHandler/index.js 200</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    移除事件监听
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                事件类型</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>listener</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                回调函数</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".ConstructorOptions">
+    <a href="#.ConstructorOptions" class="doc-link"></a>
+    MeasureHandler.ConstructorOptions
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L11">core/MeasureHandler/index.js 11</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>markerSize</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    6
+                
+                </td>
+            
+
+            <td class="description last">绘制点大小, 单位为像素</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>markerColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "#0099ff"
+                
+                </td>
+            
+
+            <td class="description last">绘制点颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>stroke</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "tomato"
+                
+                </td>
+            
+
+            <td class="description last">绘制线颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strokeWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    2
+                
+                </td>
+            
+
+            <td class="description last">绘制线宽度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fill</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "rgba(255, 255, 0, 0.3)"
+                
+                </td>
+            
+
+            <td class="description last">绘制填充颜色</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+                
+    <div class="nameContainer">
+    <h4 class="name" id=".onCallback">
+        <a href="#.onCallback" class="doc-link"></a>
+        MeasureHandler.onCallback<span class="signature">(e)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/MeasureHandler/index.js#L20">core/MeasureHandler/index.js 20</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>e</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DrawBaseHandler.html">DrawBaseHandler</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+
+    <!-- <div class="help">
+        Need help? The fastest way to get answers is from the community and team on the <a href="https://community.cesium.com/">Cesium Forum</a>.
+    </div> -->
+
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+    </footer>
+</div>
+
+<div class="nav">
+    <div class="menu">
+        <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
+        <ul id="ClassList"><li data-name="addFeatrueInfo"><a href="global.html#addFeatrueInfo">addFeatrueInfo</a></li><li data-name="addVectorEventListener"><a href="global.html#addVectorEventListener">addVectorEventListener</a></li><li data-name="AssociativeArray"><a href="AssociativeArray.html">AssociativeArray</a></li><li data-name="BaseControl"><a href="BaseControl.html">BaseControl</a></li><li data-name="BaseDataSource"><a href="BaseDataSource.html">BaseDataSource</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="CustomDataSource"><a href="CustomDataSource.html">CustomDataSource</a></li><li data-name="CustomProjection"><a href="CustomProjection.html">CustomProjection</a></li><li data-name="CustomTilingScheme"><a href="CustomTilingScheme.html">CustomTilingScheme</a></li><li data-name="DataSource"><a href="DataSource.html">DataSource</a></li><li data-name="DataSourceCollection"><a href="DataSourceCollection.html">DataSourceCollection</a></li><li data-name="DeveloperError"><a href="DeveloperError.html">DeveloperError</a></li><li data-name="DrawAngleAttr"><a href="DrawAngleAttr.html">DrawAngleAttr</a></li><li data-name="DrawAngleHandler"><a href="DrawAngleHandler.html">DrawAngleHandler</a></li><li data-name="DrawBaseAttr"><a href="DrawBaseAttr.html">DrawBaseAttr</a></li><li data-name="DrawBaseHandler"><a href="DrawBaseHandler.html">DrawBaseHandler</a></li><li data-name="DrawCircleAttr"><a href="DrawCircleAttr.html">DrawCircleAttr</a></li><li data-name="DrawCircleHandler"><a href="DrawCircleHandler.html">DrawCircleHandler</a></li><li data-name="DrawHandler"><a href="DrawHandler.html">DrawHandler</a></li><li data-name="DrawPointAttr"><a href="DrawPointAttr.html">DrawPointAttr</a></li><li data-name="DrawPointHandler"><a href="DrawPointHandler.html">DrawPointHandler</a></li><li data-name="DrawPolygonAttr"><a href="DrawPolygonAttr.html">DrawPolygonAttr</a></li><li data-name="DrawPolygonHandler"><a href="DrawPolygonHandler.html">DrawPolygonHandler</a></li><li data-name="DrawPolylineAttr"><a href="DrawPolylineAttr.html">DrawPolylineAttr</a></li><li data-name="DrawPolylineHandler"><a href="DrawPolylineHandler.html">DrawPolylineHandler</a></li><li data-name="DrawRectangleAttr"><a href="DrawRectangleAttr.html">DrawRectangleAttr</a></li><li data-name="DrawRectangleHandler"><a href="DrawRectangleHandler.html">DrawRectangleHandler</a></li><li data-name="DrawSquareAttr"><a href="DrawSquareAttr.html">DrawSquareAttr</a></li><li data-name="DrawSquareHandler"><a href="DrawSquareHandler.html">DrawSquareHandler</a></li><li data-name="DrawType"><a href="global.html#DrawType">DrawType</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="EventCallback"><a href="EventCallback.html">EventCallback</a></li><li data-name="EventCollection"><a href="EventCollection.html">EventCollection</a></li><li data-name="Events"><a href="Events.html">Events</a></li><li data-name="GeographicProjection"><a href="GeographicProjection.html">GeographicProjection</a></li><li data-name="GeoJsonDataSource"><a href="GeoJsonDataSource.html">GeoJsonDataSource</a></li><li data-name="getGroupMarkByID"><a href="global.html#getGroupMarkByID">getGroupMarkByID</a></li><li data-name="getMarkByID"><a href="global.html#getMarkByID">getMarkByID</a></li><li data-name="Globe"><a href="Globe.html">Globe</a></li><li data-name="Graphics"><a href="Graphics.html">Graphics</a></li><li data-name="ImageryLayerCollection"><a href="ImageryLayerCollection.html">ImageryLayerCollection</a></li><li data-name="ImageryProvider"><a href="ImageryProvider.html">ImageryProvider</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="Map2D"><a href="Map2D.html">Map2D</a></li><li data-name="Map2d"><a href="global.html#Map2d">Map2d</a></li><li data-name="MapProjection"><a href="MapProjection.html">MapProjection</a></li><li data-name="MeasureHandler"><a href="MeasureHandler.html">MeasureHandler</a></li><li data-name="MeasureType"><a href="global.html#MeasureType">MeasureType</a></li><li data-name="MousePositionControl"><a href="MousePositionControl.html">MousePositionControl</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Popup"><a href="Popup.html">Popup</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Rectangle"><a href="Rectangle.html">Rectangle</a></li><li data-name="ScaleLineControl"><a href="ScaleLineControl.html">ScaleLineControl</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="ScreenSpaceEventHandler"><a href="ScreenSpaceEventHandler.html">ScreenSpaceEventHandler</a></li><li data-name="ScreenSpaceEventType"><a href="global.html#ScreenSpaceEventType">ScreenSpaceEventType</a></li><li data-name="SuperMapImageryProvider"><a href="SuperMapImageryProvider.html">SuperMapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TilingScheme"><a href="TilingScheme.html">TilingScheme</a></li><li data-name="TrackLine"><a href="TrackLine.html">TrackLine</a></li><li data-name="TranslateControl"><a href="TranslateControl.html">TranslateControl</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorProjection"><a href="WebMercatorProjection.html">WebMercatorProjection</a></li><li data-name="ZoomSliderControl"><a href="ZoomSliderControl.html">ZoomSliderControl</a></li></ul>
+    </div>
+</div>
+
+<script>
+if (window.frameElement) {
+    document.body.className = 'embedded';
+
+    var ele = document.createElement('a');
+    ele.className = 'popout';
+    ele.target = '_blank';
+    ele.href = window.location.href;
+    ele.title = 'Pop out';
+    document.getElementById('main').appendChild(ele);
+}
+
+// Set targets on external links.  Sandcastle and GitHub shouldn't be embedded in any iframe.
+Array.prototype.forEach.call(document.getElementsByTagName('a'), function(a) {
+    if (/^https?:/i.test(a.getAttribute('href'))) {
+        a.target='_blank';
+    }
+});
+</script>
+
+<script src="javascript/prism.js"></script>
+<script src="javascript/cesiumDoc.js"></script>
+
+</body>
+</html>

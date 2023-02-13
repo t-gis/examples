@@ -42,11 +42,11 @@
     <div class="nameContainer">
     <h4 class="name" id="Camera">
         <a href="#Camera" class="doc-link"></a>
-        new Camera<span class="signature">()</span>
+        new Camera<span class="signature">(owner)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L7">scene/Camera.js 7</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L9">scene/Camera.js 9</a>
 </div> -->
 
 
@@ -67,6 +67,51 @@
 
 
 
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>owner</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Viewer.html">Viewer</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                viewer</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
 
@@ -127,136 +172,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="defaultZoomAmount">
-    <a href="#defaultZoomAmount" class="doc-link"></a>
-    defaultZoomAmount<span class="type-signature"> : Number</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L81">scene/Camera.js 81</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    默认缩放程度
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">Default Value:</span>
-    <code class="language-javascript">100000.0</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="isFullScreen">
-    <a href="#isFullScreen" class="doc-link"></a>
-    <span class="type-signature attribute-readonly">readonly</span> isFullScreen<span class="type-signature"> : Boolean</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L17">scene/Camera.js 17</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    全屏状态
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">Default Value:</span>
-    <code class="language-javascript">false</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
     
 
     
@@ -265,13 +180,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id="flyPosition">
-        <a href="#flyPosition" class="doc-link"></a>
-        flyPosition<span class="signature">(options)</span>
+    <h4 class="name" id="computeViewRectangle">
+        <a href="#computeViewRectangle" class="doc-link"></a>
+        computeViewRectangle<span class="signature">()</span> &rarr; <span class="type-signature returnType">Array.&lt;Number></span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L27">scene/Camera.js 27</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L34">scene/Camera.js 34</a>
 </div> -->
 
 
@@ -283,7 +198,280 @@
 
 
 <div class="description">
-    飞入
+    获取当前视口的左下角和右上角位置
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    经纬度数组
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 获取当前视口左下角和右上角组成的经纬度数组const extent = map2d.camera.computeViewRectangle()// [114.03302290725708, 22.613155727386474, 114.07297709274292, 22.646844272613524]console.log(extent)</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="fit">
+        <a href="#fit" class="doc-link"></a>
+        fit<span class="signature">(positions, <span class="optional">padding</span>)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L54">scene/Camera.js 54</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    根据经纬度数组数据调整合适的视角
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>positions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Array.&lt;Number>></span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                经纬度二维数组</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>padding</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+
+            
+                <td class="default">
+                
+                    <code class="language-javascript">[10,10,10,10]</code>
+                
+                </td>
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                矩形视角内边距</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 定义经纬度数组数据const positions = [    [114.03302290725708, 22.613155727386474],    [114.07297709274292, 22.646844272613524],    [114.053, 22.63]]// 调整视角map2d.camera.fit(positions, [50, 50, 50, 50])</code></pre>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="flyTo">
+        <a href="#flyTo" class="doc-link"></a>
+        flyTo<span class="signature">(options)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L79">scene/Camera.js 79</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    设置相机位置
 </div>
 
 
@@ -334,7 +522,7 @@
 
             <td class="description last">
             
-                具有以下属性
+                对象具有以下属性
                 
 
 <table class="params">
@@ -357,7 +545,7 @@
 
         <tr>
             
-                <td class="name"><code>position</code></td>
+                <td class="name"><code>destination</code></td>
             
 
             <td class="type">
@@ -373,7 +561,53 @@
 
             <td class="description last">
             
-                目的地</td>
+                将要设置的位置信息</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>duration</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                动画的持续时间以毫秒为单位</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>complete</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                动画结束回调函数</td>
         </tr>
 
     
@@ -420,85 +654,9 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
+        <h5>Example:</h5>
         
-            
-    <div class="nameContainer">
-    <h4 class="name" id="toggleFullScreen">
-        <a href="#toggleFullScreen" class="doc-link"></a>
-        toggleFullScreen<span class="signature">()</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L40">scene/Camera.js 40</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    切换全屏
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <pre><code class="language-javascript">// 创建终点const position = new Position(114.07291271972656, 22.646887187957763)// 调整视角map2d.camera.flyTo({    destination: position,    duration: 3000,    complete: () => {        console.log("complete")    }})</code></pre>
 
     
 
@@ -517,13 +675,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id="zoomIn">
-        <a href="#zoomIn" class="doc-link"></a>
-        zoomIn<span class="signature">(<span class="optional">amount</span>)</span>
+    <h4 class="name" id="setView">
+        <a href="#setView" class="doc-link"></a>
+        setView<span class="signature">(options)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L88">scene/Camera.js 88</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L104">scene/Camera.js 104</a>
 </div> -->
 
 
@@ -535,7 +693,7 @@
 
 
 <div class="description">
-    放大
+    设置相机位置
 </div>
 
 
@@ -570,13 +728,13 @@
 
         <tr>
             
-                <td class="name"><code>amount</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Object</span>
 
 
             
@@ -586,102 +744,8 @@
 
             <td class="description last">
             
+                对象具有以下属性
                 
-                        <span class="optional">optional</span>
-                
-                
-
-                
-            
-                要缩放的数值. 默认值为 <code>defaultZoomAmount</code>.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="zoomOut">
-        <a href="#zoomOut" class="doc-link"></a>
-        zoomOut<span class="signature">(<span class="optional">amount</span>)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Camera.js#L96">scene/Camera.js 96</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    缩小
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
 
 <table class="params">
     <thead>
@@ -703,13 +767,13 @@
 
         <tr>
             
-                <td class="name"><code>amount</code></td>
+                <td class="name"><code>destination</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type"><a href="Position.html">Position</a></span>
 
 
             
@@ -719,14 +783,13 @@
 
             <td class="description last">
             
-                
-                        <span class="optional">optional</span>
-                
-                
+                将要设置的位置信息</td>
+        </tr>
 
-                
-            
-                要缩放的数值. 默认值为 <code>defaultZoomAmount</code>.</td>
+    
+    </tbody>
+</table>
+            </td>
         </tr>
 
     
@@ -765,6 +828,11 @@
     
 
     
+
+    
+        <h5>Example:</h5>
+        
+    <pre><code class="language-javascript">// 创建终点const position = new Position(114.07291271972656, 22.646887187957763)// 调整视角map2d.camera.setView({    destination: position,})</code></pre>
 
     
 
@@ -806,7 +874,7 @@
 <div class="nav">
     <div class="menu">
         <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
-        <ul id="ClassList"><li data-name="ArcGisMapServerImageryProvider"><a href="ArcGisMapServerImageryProvider.html">ArcGisMapServerImageryProvider</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="Cartesian2"><a href="Cartesian2.html">Cartesian2</a></li><li data-name="Cartesian3"><a href="Cartesian3.html">Cartesian3</a></li><li data-name="Cartographic"><a href="Cartographic.html">Cartographic</a></li><li data-name="Color"><a href="Color.html">Color</a></li><li data-name="ControlCollection"><a href="ControlCollection.html">ControlCollection</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="Format"><a href="Format.html">Format</a></li><li data-name="GeographicTilingScheme"><a href="GeographicTilingScheme.html">GeographicTilingScheme</a></li><li data-name="GMLFormat"><a href="GMLFormat.html">GMLFormat</a></li><li data-name="ImagerySplit"><a href="ImagerySplit.html">ImagerySplit</a></li><li data-name="JulianDate"><a href="JulianDate.html">JulianDate</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="LabelStyle"><a href="global.html#LabelStyle">LabelStyle</a></li><li data-name="Map3D"><a href="Map3D.html">Map3D</a></li><li data-name="MaterialProperty"><a href="MaterialProperty.html">MaterialProperty</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolygonGraphics"><a href="PolygonGraphics.html">PolygonGraphics</a></li><li data-name="PolygonHierarchy"><a href="PolygonHierarchy.html">PolygonHierarchy</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="SingleTileImageryProvider"><a href="SingleTileImageryProvider.html">SingleTileImageryProvider</a></li><li data-name="SupermapImageryProvider"><a href="SupermapImageryProvider.html">SupermapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TopolAnalysis"><a href="TopolAnalysis.html">TopolAnalysis</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorTilingScheme"><a href="WebMercatorTilingScheme.html">WebMercatorTilingScheme</a></li></ul>
+        <ul id="ClassList"><li data-name="addFeatrueInfo"><a href="global.html#addFeatrueInfo">addFeatrueInfo</a></li><li data-name="addVectorEventListener"><a href="global.html#addVectorEventListener">addVectorEventListener</a></li><li data-name="AssociativeArray"><a href="AssociativeArray.html">AssociativeArray</a></li><li data-name="BaseControl"><a href="BaseControl.html">BaseControl</a></li><li data-name="BaseDataSource"><a href="BaseDataSource.html">BaseDataSource</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="CustomDataSource"><a href="CustomDataSource.html">CustomDataSource</a></li><li data-name="CustomProjection"><a href="CustomProjection.html">CustomProjection</a></li><li data-name="CustomTilingScheme"><a href="CustomTilingScheme.html">CustomTilingScheme</a></li><li data-name="DataSource"><a href="DataSource.html">DataSource</a></li><li data-name="DataSourceCollection"><a href="DataSourceCollection.html">DataSourceCollection</a></li><li data-name="DeveloperError"><a href="DeveloperError.html">DeveloperError</a></li><li data-name="DrawAngleAttr"><a href="DrawAngleAttr.html">DrawAngleAttr</a></li><li data-name="DrawAngleHandler"><a href="DrawAngleHandler.html">DrawAngleHandler</a></li><li data-name="DrawBaseAttr"><a href="DrawBaseAttr.html">DrawBaseAttr</a></li><li data-name="DrawBaseHandler"><a href="DrawBaseHandler.html">DrawBaseHandler</a></li><li data-name="DrawCircleAttr"><a href="DrawCircleAttr.html">DrawCircleAttr</a></li><li data-name="DrawCircleHandler"><a href="DrawCircleHandler.html">DrawCircleHandler</a></li><li data-name="DrawHandler"><a href="DrawHandler.html">DrawHandler</a></li><li data-name="DrawPointAttr"><a href="DrawPointAttr.html">DrawPointAttr</a></li><li data-name="DrawPointHandler"><a href="DrawPointHandler.html">DrawPointHandler</a></li><li data-name="DrawPolygonAttr"><a href="DrawPolygonAttr.html">DrawPolygonAttr</a></li><li data-name="DrawPolygonHandler"><a href="DrawPolygonHandler.html">DrawPolygonHandler</a></li><li data-name="DrawPolylineAttr"><a href="DrawPolylineAttr.html">DrawPolylineAttr</a></li><li data-name="DrawPolylineHandler"><a href="DrawPolylineHandler.html">DrawPolylineHandler</a></li><li data-name="DrawRectangleAttr"><a href="DrawRectangleAttr.html">DrawRectangleAttr</a></li><li data-name="DrawRectangleHandler"><a href="DrawRectangleHandler.html">DrawRectangleHandler</a></li><li data-name="DrawSquareAttr"><a href="DrawSquareAttr.html">DrawSquareAttr</a></li><li data-name="DrawSquareHandler"><a href="DrawSquareHandler.html">DrawSquareHandler</a></li><li data-name="DrawType"><a href="global.html#DrawType">DrawType</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="EventCallback"><a href="EventCallback.html">EventCallback</a></li><li data-name="EventCollection"><a href="EventCollection.html">EventCollection</a></li><li data-name="Events"><a href="Events.html">Events</a></li><li data-name="GeographicProjection"><a href="GeographicProjection.html">GeographicProjection</a></li><li data-name="GeoJsonDataSource"><a href="GeoJsonDataSource.html">GeoJsonDataSource</a></li><li data-name="getGroupMarkByID"><a href="global.html#getGroupMarkByID">getGroupMarkByID</a></li><li data-name="getMarkByID"><a href="global.html#getMarkByID">getMarkByID</a></li><li data-name="Globe"><a href="Globe.html">Globe</a></li><li data-name="Graphics"><a href="Graphics.html">Graphics</a></li><li data-name="ImageryLayerCollection"><a href="ImageryLayerCollection.html">ImageryLayerCollection</a></li><li data-name="ImageryProvider"><a href="ImageryProvider.html">ImageryProvider</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="Map2D"><a href="Map2D.html">Map2D</a></li><li data-name="Map2d"><a href="global.html#Map2d">Map2d</a></li><li data-name="MapProjection"><a href="MapProjection.html">MapProjection</a></li><li data-name="MeasureHandler"><a href="MeasureHandler.html">MeasureHandler</a></li><li data-name="MeasureType"><a href="global.html#MeasureType">MeasureType</a></li><li data-name="MousePositionControl"><a href="MousePositionControl.html">MousePositionControl</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Popup"><a href="Popup.html">Popup</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Rectangle"><a href="Rectangle.html">Rectangle</a></li><li data-name="ScaleLineControl"><a href="ScaleLineControl.html">ScaleLineControl</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="ScreenSpaceEventHandler"><a href="ScreenSpaceEventHandler.html">ScreenSpaceEventHandler</a></li><li data-name="ScreenSpaceEventType"><a href="global.html#ScreenSpaceEventType">ScreenSpaceEventType</a></li><li data-name="SuperMapImageryProvider"><a href="SuperMapImageryProvider.html">SuperMapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TilingScheme"><a href="TilingScheme.html">TilingScheme</a></li><li data-name="TrackLine"><a href="TrackLine.html">TrackLine</a></li><li data-name="TranslateControl"><a href="TranslateControl.html">TranslateControl</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorProjection"><a href="WebMercatorProjection.html">WebMercatorProjection</a></li><li data-name="ZoomSliderControl"><a href="ZoomSliderControl.html">ZoomSliderControl</a></li></ul>
     </div>
 </div>
 

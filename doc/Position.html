@@ -31,6 +31,8 @@
 
 <header>
     
+        <div class="class-description">位置坐标</div>
+    
 </header>
 
 <article>
@@ -42,7 +44,7 @@
     <div class="nameContainer">
     <h4 class="name" id="Position">
         <a href="#Position" class="doc-link"></a>
-        new Position<span class="signature">(longitude, latitude, height)</span>
+        new Position<span class="signature">(lng, lat)</span>
         
 
 <!-- <div class="source-link rightLinks">
@@ -89,7 +91,7 @@
 
         <tr>
             
-                <td class="name"><code>longitude</code></td>
+                <td class="name"><code>lng</code></td>
             
 
             <td class="type">
@@ -105,14 +107,14 @@
 
             <td class="description last">
             
-                经度, 角度单位</td>
+                经度</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>latitude</code></td>
+                <td class="name"><code>lat</code></td>
             
 
             <td class="type">
@@ -128,30 +130,7 @@
 
             <td class="description last">
             
-                纬度, 角度单位</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>height</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                高度, 米单位</td>
+                纬度</td>
         </tr>
 
     
@@ -226,13 +205,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id=".fromCartesian">
-        <a href="#.fromCartesian" class="doc-link"></a>
-        <span class="type-signature attribute-static">static</span> Position.fromCartesian<span class="signature">(cartesian, ellipsoid)</span> &rarr; <span class="type-signature returnType"><a href="Position.html">Position</a></span>
+    <h4 class="name" id=".add">
+        <a href="#.add" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Position.add<span class="signature">(left, right)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L21">core/Position.js 21</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L58">core/Position.js 58</a>
 </div> -->
 
 
@@ -244,7 +223,7 @@
 
 
 <div class="description">
-    fromCartesian
+    计算两个坐标的分量和
 </div>
 
 
@@ -279,13 +258,13 @@
 
         <tr>
             
-                <td class="name"><code>cartesian</code></td>
+                <td class="name"><code>left</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Cesium.Cartesian3</span>
+<span class="param-type"><a href="Position.html">Position</a></span>
 
 
             
@@ -302,13 +281,13 @@
 
         <tr>
             
-                <td class="name"><code>ellipsoid</code></td>
+                <td class="name"><code>right</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Cesium.Ellipsoid</span>
+<span class="param-type"><a href="Position.html">Position</a></span>
 
 
             
@@ -338,6 +317,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    result
+</div>
+
 
     
 
@@ -380,13 +363,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id=".fromRadians">
-        <a href="#.fromRadians" class="doc-link"></a>
-        <span class="type-signature attribute-static">static</span> Position.fromRadians<span class="signature">(longitude, latitude, height)</span> &rarr; <span class="type-signature returnType"><a href="Position.html">Position</a></span>
+    <h4 class="name" id=".divideByScalar">
+        <a href="#.divideByScalar" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Position.divideByScalar<span class="signature">(position, scalar)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L49">core/Position.js 49</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L47">core/Position.js 47</a>
 </div> -->
 
 
@@ -398,7 +381,7 @@
 
 
 <div class="description">
-    fromRadians
+    按标量除法
 </div>
 
 
@@ -433,13 +416,13 @@
 
         <tr>
             
-                <td class="name"><code>longitude</code></td>
+                <td class="name"><code>position</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type"><a href="Position.html">Position</a></span>
 
 
             
@@ -449,14 +432,14 @@
 
             <td class="description last">
             
-                经度, 弧度单位</td>
+                要缩放的坐标</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>latitude</code></td>
+                <td class="name"><code>scalar</code></td>
             
 
             <td class="type">
@@ -472,30 +455,7 @@
 
             <td class="description last">
             
-                纬度, 弧度单位</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>height</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                高度, 米单位</td>
+                </td>
         </tr>
 
     
@@ -515,6 +475,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    result
+</div>
+
 
     
 
@@ -557,9 +521,181 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id=".toCartesian">
-        <a href="#.toCartesian" class="doc-link"></a>
-        <span class="type-signature attribute-static">static</span> Position.toCartesian<span class="signature">(position, ellipsoid)</span> &rarr; <span class="type-signature returnType">Cesium.Cartesian3</span>
+    <h4 class="name" id=".lerp">
+        <a href="#.lerp" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Position.lerp<span class="signature">(start, end, t)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L23">core/Position.js 23</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    获取两点之间的分量值
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Position.html">Position</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                起点坐标</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Position.html">Position</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>t</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".multiplyByScalar">
+        <a href="#.multiplyByScalar" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Position.multiplyByScalar<span class="signature">(position, scalar)</span>
         
 
 <!-- <div class="source-link rightLinks">
@@ -575,7 +711,7 @@
 
 
 <div class="description">
-    toCartesian
+    按标量乘法
 </div>
 
 
@@ -626,20 +762,20 @@
 
             <td class="description last">
             
-                </td>
+                要缩放的坐标</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>ellipsoid</code></td>
+                <td class="name"><code>scalar</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Cesium.Ellipsoid</span>
+<span class="param-type">Number</span>
 
 
             
@@ -649,7 +785,7 @@
 
             <td class="description last">
             
-                </td>
+                缩放系数</td>
         </tr>
 
     
@@ -669,6 +805,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    result
+</div>
+
 
     
 
@@ -711,13 +851,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id=".toCartographic">
-        <a href="#.toCartographic" class="doc-link"></a>
-        <span class="type-signature attribute-static">static</span> Position.toCartographic<span class="signature">(position)</span> &rarr; <span class="type-signature returnType">Cesium.Cartographic</span>
+    <h4 class="name" id=".subtract">
+        <a href="#.subtract" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Position.subtract<span class="signature">(left, right)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L62">core/Position.js 62</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Position.js#L69">core/Position.js 69</a>
 </div> -->
 
 
@@ -729,7 +869,7 @@
 
 
 <div class="description">
-    toCartographic
+    计算两个坐标的分量差
 </div>
 
 
@@ -764,7 +904,30 @@
 
         <tr>
             
-                <td class="name"><code>position</code></td>
+                <td class="name"><code>left</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Position.html">Position</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>right</code></td>
             
 
             <td class="type">
@@ -800,6 +963,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    result
+</div>
+
 
     
 
@@ -865,7 +1032,7 @@
 <div class="nav">
     <div class="menu">
         <input type="text" class="classFilter" id="ClassFilter" placeholder="Search">
-        <ul id="ClassList"><li data-name="ArcGisMapServerImageryProvider"><a href="ArcGisMapServerImageryProvider.html">ArcGisMapServerImageryProvider</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="Cartesian2"><a href="Cartesian2.html">Cartesian2</a></li><li data-name="Cartesian3"><a href="Cartesian3.html">Cartesian3</a></li><li data-name="Cartographic"><a href="Cartographic.html">Cartographic</a></li><li data-name="Color"><a href="Color.html">Color</a></li><li data-name="ControlCollection"><a href="ControlCollection.html">ControlCollection</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="Format"><a href="Format.html">Format</a></li><li data-name="GeographicTilingScheme"><a href="GeographicTilingScheme.html">GeographicTilingScheme</a></li><li data-name="GMLFormat"><a href="GMLFormat.html">GMLFormat</a></li><li data-name="ImagerySplit"><a href="ImagerySplit.html">ImagerySplit</a></li><li data-name="JulianDate"><a href="JulianDate.html">JulianDate</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="LabelStyle"><a href="global.html#LabelStyle">LabelStyle</a></li><li data-name="Map3D"><a href="Map3D.html">Map3D</a></li><li data-name="MaterialProperty"><a href="MaterialProperty.html">MaterialProperty</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolygonGraphics"><a href="PolygonGraphics.html">PolygonGraphics</a></li><li data-name="PolygonHierarchy"><a href="PolygonHierarchy.html">PolygonHierarchy</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="SingleTileImageryProvider"><a href="SingleTileImageryProvider.html">SingleTileImageryProvider</a></li><li data-name="SupermapImageryProvider"><a href="SupermapImageryProvider.html">SupermapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TopolAnalysis"><a href="TopolAnalysis.html">TopolAnalysis</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorTilingScheme"><a href="WebMercatorTilingScheme.html">WebMercatorTilingScheme</a></li></ul>
+        <ul id="ClassList"><li data-name="addFeatrueInfo"><a href="global.html#addFeatrueInfo">addFeatrueInfo</a></li><li data-name="addVectorEventListener"><a href="global.html#addVectorEventListener">addVectorEventListener</a></li><li data-name="AssociativeArray"><a href="AssociativeArray.html">AssociativeArray</a></li><li data-name="BaseControl"><a href="BaseControl.html">BaseControl</a></li><li data-name="BaseDataSource"><a href="BaseDataSource.html">BaseDataSource</a></li><li data-name="BaseService"><a href="BaseService.html">BaseService</a></li><li data-name="BillboardGraphics"><a href="BillboardGraphics.html">BillboardGraphics</a></li><li data-name="Camera"><a href="Camera.html">Camera</a></li><li data-name="CoordTransforms"><a href="CoordTransforms.html">CoordTransforms</a></li><li data-name="CustomDataSource"><a href="CustomDataSource.html">CustomDataSource</a></li><li data-name="CustomProjection"><a href="CustomProjection.html">CustomProjection</a></li><li data-name="CustomTilingScheme"><a href="CustomTilingScheme.html">CustomTilingScheme</a></li><li data-name="DataSource"><a href="DataSource.html">DataSource</a></li><li data-name="DataSourceCollection"><a href="DataSourceCollection.html">DataSourceCollection</a></li><li data-name="DeveloperError"><a href="DeveloperError.html">DeveloperError</a></li><li data-name="DrawAngleAttr"><a href="DrawAngleAttr.html">DrawAngleAttr</a></li><li data-name="DrawAngleHandler"><a href="DrawAngleHandler.html">DrawAngleHandler</a></li><li data-name="DrawBaseAttr"><a href="DrawBaseAttr.html">DrawBaseAttr</a></li><li data-name="DrawBaseHandler"><a href="DrawBaseHandler.html">DrawBaseHandler</a></li><li data-name="DrawCircleAttr"><a href="DrawCircleAttr.html">DrawCircleAttr</a></li><li data-name="DrawCircleHandler"><a href="DrawCircleHandler.html">DrawCircleHandler</a></li><li data-name="DrawHandler"><a href="DrawHandler.html">DrawHandler</a></li><li data-name="DrawPointAttr"><a href="DrawPointAttr.html">DrawPointAttr</a></li><li data-name="DrawPointHandler"><a href="DrawPointHandler.html">DrawPointHandler</a></li><li data-name="DrawPolygonAttr"><a href="DrawPolygonAttr.html">DrawPolygonAttr</a></li><li data-name="DrawPolygonHandler"><a href="DrawPolygonHandler.html">DrawPolygonHandler</a></li><li data-name="DrawPolylineAttr"><a href="DrawPolylineAttr.html">DrawPolylineAttr</a></li><li data-name="DrawPolylineHandler"><a href="DrawPolylineHandler.html">DrawPolylineHandler</a></li><li data-name="DrawRectangleAttr"><a href="DrawRectangleAttr.html">DrawRectangleAttr</a></li><li data-name="DrawRectangleHandler"><a href="DrawRectangleHandler.html">DrawRectangleHandler</a></li><li data-name="DrawSquareAttr"><a href="DrawSquareAttr.html">DrawSquareAttr</a></li><li data-name="DrawSquareHandler"><a href="DrawSquareHandler.html">DrawSquareHandler</a></li><li data-name="DrawType"><a href="global.html#DrawType">DrawType</a></li><li data-name="Entity"><a href="Entity.html">Entity</a></li><li data-name="EntityCollection"><a href="EntityCollection.html">EntityCollection</a></li><li data-name="EventCallback"><a href="EventCallback.html">EventCallback</a></li><li data-name="EventCollection"><a href="EventCollection.html">EventCollection</a></li><li data-name="Events"><a href="Events.html">Events</a></li><li data-name="GeographicProjection"><a href="GeographicProjection.html">GeographicProjection</a></li><li data-name="GeoJsonDataSource"><a href="GeoJsonDataSource.html">GeoJsonDataSource</a></li><li data-name="getGroupMarkByID"><a href="global.html#getGroupMarkByID">getGroupMarkByID</a></li><li data-name="getMarkByID"><a href="global.html#getMarkByID">getMarkByID</a></li><li data-name="Globe"><a href="Globe.html">Globe</a></li><li data-name="Graphics"><a href="Graphics.html">Graphics</a></li><li data-name="ImageryLayerCollection"><a href="ImageryLayerCollection.html">ImageryLayerCollection</a></li><li data-name="ImageryProvider"><a href="ImageryProvider.html">ImageryProvider</a></li><li data-name="LabelGraphics"><a href="LabelGraphics.html">LabelGraphics</a></li><li data-name="Map2D"><a href="Map2D.html">Map2D</a></li><li data-name="Map2d"><a href="global.html#Map2d">Map2d</a></li><li data-name="MapProjection"><a href="MapProjection.html">MapProjection</a></li><li data-name="MeasureHandler"><a href="MeasureHandler.html">MeasureHandler</a></li><li data-name="MeasureType"><a href="global.html#MeasureType">MeasureType</a></li><li data-name="MousePositionControl"><a href="MousePositionControl.html">MousePositionControl</a></li><li data-name="PointGraphics"><a href="PointGraphics.html">PointGraphics</a></li><li data-name="PolylineGraphics"><a href="PolylineGraphics.html">PolylineGraphics</a></li><li data-name="Popup"><a href="Popup.html">Popup</a></li><li data-name="Position"><a href="Position.html">Position</a></li><li data-name="Rectangle"><a href="Rectangle.html">Rectangle</a></li><li data-name="ScaleLineControl"><a href="ScaleLineControl.html">ScaleLineControl</a></li><li data-name="Scene"><a href="Scene.html">Scene</a></li><li data-name="ScreenSpaceEventHandler"><a href="ScreenSpaceEventHandler.html">ScreenSpaceEventHandler</a></li><li data-name="ScreenSpaceEventType"><a href="global.html#ScreenSpaceEventType">ScreenSpaceEventType</a></li><li data-name="SuperMapImageryProvider"><a href="SuperMapImageryProvider.html">SuperMapImageryProvider</a></li><li data-name="TGisService"><a href="TGisService.html">TGisService</a></li><li data-name="TianDiService"><a href="TianDiService.html">TianDiService</a></li><li data-name="TilingScheme"><a href="TilingScheme.html">TilingScheme</a></li><li data-name="TrackLine"><a href="TrackLine.html">TrackLine</a></li><li data-name="TranslateControl"><a href="TranslateControl.html">TranslateControl</a></li><li data-name="UrlTemplateImageryProvider"><a href="UrlTemplateImageryProvider.html">UrlTemplateImageryProvider</a></li><li data-name="Viewer"><a href="Viewer.html">Viewer</a></li><li data-name="WebFeatureServiceImageryProvider"><a href="WebFeatureServiceImageryProvider.html">WebFeatureServiceImageryProvider</a></li><li data-name="WebMapServiceImageryProvider"><a href="WebMapServiceImageryProvider.html">WebMapServiceImageryProvider</a></li><li data-name="WebMapTileServiceImageryProvider"><a href="WebMapTileServiceImageryProvider.html">WebMapTileServiceImageryProvider</a></li><li data-name="WebMercatorProjection"><a href="WebMercatorProjection.html">WebMercatorProjection</a></li><li data-name="ZoomSliderControl"><a href="ZoomSliderControl.html">ZoomSliderControl</a></li></ul>
     </div>
 </div>
 

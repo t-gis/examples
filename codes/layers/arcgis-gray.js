@@ -1,12 +1,15 @@
-import * as Map3d from "map3d";
+import * as Map2d from "map2d";
 
-// arcgis 底图服务链接
-const url = "http://map.geoq.cn/arcgis/rest/services/ChinaOnlineStreetGray/MapServer"
+const url = "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer/Tile/{z}/{y}/{x}"
 
-// 创建地球
-const viewer = new Map3d.Viewer("map", {
-    // 初始化图层为 arcgis 底图
-    imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+// 创建 argis 图层
+const arcgis = new ol.layer.Tile({
+    source: new ol.source.XYZ({
         url
     })
-})
+});
+
+// 创建地图
+const map = new Map2d.Viewer("map", {
+    imageryProvider: arcgis,
+});

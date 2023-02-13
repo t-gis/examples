@@ -1,4 +1,4 @@
-import * as Map3d from "map3d";
+import * as Map2d from "map2d";
 
 const url = "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/Tile/{z}/{y}/{x}"
 
