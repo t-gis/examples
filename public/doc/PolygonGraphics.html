@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PolylineGraphics - TGIS 文档</title>
+    <title>PolygonGraphics - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        PolylineGraphics
+        PolygonGraphics
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="PolylineGraphics">
-        <a href="#PolylineGraphics" class="doc-link"></a>
-        new PolylineGraphics<span class="signature">(options)</span>
+    <h4 class="name" id="PolygonGraphics">
+        <a href="#PolygonGraphics" class="doc-link"></a>
+        new PolygonGraphics<span class="signature">(options)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolylineGraphics.js#L20">dataSources/PolylineGraphics.js 20</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolygonGraphics.js#L23">dataSources/PolygonGraphics.js 23</a>
 </div> -->
 
 
@@ -95,7 +95,7 @@
             <td class="type">
             
                 
-<span class="param-type"><a href="PolylineGraphics.html#.ConstructorOptions">PolylineGraphics.ConstructorOptions</a></span>
+<span class="param-type"><a href="PolygonGraphics.html#.ConstructorOptions">PolygonGraphics.ConstructorOptions</a></span>
 
 
             
@@ -319,66 +319,6 @@
         
             
 <div class="nameContainer">
-<h4 class="name" id="material">
-    <a href="#material" class="doc-link"></a>
-    material<span class="type-signature"> : String</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolylineGraphics.js#L72">dataSources/PolylineGraphics.js 72</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置材质
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
 <h4 class="name" id="owner">
     <a href="#owner" class="doc-link"></a>
     owner<span class="type-signature"> : <a href="Entity.html">Entity</a></span>
@@ -450,7 +390,7 @@
     
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolylineGraphics.js#L46">dataSources/PolylineGraphics.js 46</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolygonGraphics.js#L55">dataSources/PolygonGraphics.js 55</a>
 </div> -->
 
 
@@ -540,66 +480,6 @@
     <dd class="inherited-from"><ul class="dummy"><li>
         <a href="Graphics.html#show">Graphics#show</a>
     </li></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="width">
-    <a href="#width" class="doc-link"></a>
-    width<span class="type-signature"> : Number</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolylineGraphics.js#L59">dataSources/PolylineGraphics.js 59</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置宽度
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
     
 
     
@@ -1046,11 +926,11 @@
 <div class="nameContainer">
 <h4 class="name" id=".ConstructorOptions">
     <a href="#.ConstructorOptions" class="doc-link"></a>
-    PolylineGraphics.ConstructorOptions
+    PolygonGraphics.ConstructorOptions
     
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolylineGraphics.js#L8">dataSources/PolylineGraphics.js 8</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/PolygonGraphics.js#L8">dataSources/PolygonGraphics.js 8</a>
 </div> -->
 
 
@@ -1134,13 +1014,13 @@
 
         <tr>
             
-                <td class="name"><code>width</code></td>
+                <td class="name"><code>fill</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Boolean</span>
 
 
             
@@ -1159,12 +1039,12 @@
             
                 <td class="default">
                 
-                    1
+                    true
                 
                 </td>
             
 
-            <td class="description last">宽度</td>
+            <td class="description last">是否填充</td>
         </tr>
 
     
@@ -1201,7 +1081,118 @@
                 </td>
             
 
-            <td class="description last">颜色</td>
+            <td class="description last">填充颜色</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>outline</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last">是否描边</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>outlineWidth</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last">描边宽度</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>outlineColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "#000"
+                
+                </td>
+            
+
+            <td class="description last">描边颜色</td>
         </tr>
 
     

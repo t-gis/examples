@@ -82,7 +82,9 @@ const Home = memo(() => {
                         { title: "图片", url: "./codes/vector/entity-billboard.js", image: "vector/entity-billboard.jpg" },
                         { title: "点", url: "./codes/vector/entity-point.js", image: "vector/entity-point.jpg" },
                         { title: "线", url: "./codes/vector/entity-polyline.js", image: "vector/entity-polyline.jpg" },
+                        { title: "面", url: "./codes/vector/entity-polygon.js", image: "vector/entity-polygon.jpg" },
                         { title: "混合矢量", url: "./codes/vector/entity-mixin.js", image: "vector/entity-mixin.jpg" },
+                        { title: "GeoJSON", url: "./codes/vector/entity-geojson.js", image: "vector/entity-geojson.jpg" },
                     ]
                 }
             ]
