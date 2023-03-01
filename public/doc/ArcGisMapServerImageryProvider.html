@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EventCollection - TGIS 文档</title>
+    <title>ArcGisMapServerImageryProvider - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        EventCollection
+        ArcGisMapServerImageryProvider
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="EventCollection">
-        <a href="#EventCollection" class="doc-link"></a>
-        new EventCollection<span class="signature">()</span>
+    <h4 class="name" id="ArcGisMapServerImageryProvider">
+        <a href="#ArcGisMapServerImageryProvider" class="doc-link"></a>
+        new ArcGisMapServerImageryProvider<span class="signature">()</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L5">core/EventCollection.js 5</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/ArcGisMapServerImageryProvider.js#L12">scene/ArcGisMapServerImageryProvider.js 12</a>
 </div> -->
 
 
@@ -118,46 +118,14 @@
     </div>
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
+        <h3 class="subsection-title">Extends</h3>
 
         
-            
-<div class="nameContainer">
-<h4 class="name" id="events">
-    <a href="#events" class="doc-link"></a>
-    events<span class="type-signature"> : Map</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L11">core/EventCollection.js 11</a>
-</div> -->
 
 
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    events
-</div>
-
-
-
-
-
-<dl class="details">
+    <ul>
+        <li><a href="ImageryProvider.html">ImageryProvider</a></li>
+    </ul>
 
 
     
@@ -170,27 +138,6 @@
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
     
 
     
@@ -199,13 +146,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id="add">
-        <a href="#add" class="doc-link"></a>
-        add<span class="signature">(type, callback)</span> &rarr; <span class="type-signature returnType"><a href="EventCallback.html">EventCallback</a></span>
+    <h4 class="name" id="getLegends">
+        <a href="#getLegends" class="doc-link"></a>
+        getLegends<span class="signature">(options)</span> &rarr; <span class="type-signature returnType">Promise</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L19">core/EventCollection.js 19</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/ImageryProvider.js#L36">scene/ImageryProvider.js 36</a>
 </div> -->
 
 
@@ -217,7 +164,7 @@
 
 
 <div class="description">
-    add
+    查询服务的图例
 </div>
 
 
@@ -252,13 +199,13 @@
 
         <tr>
             
-                <td class="name"><code>type</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
             
@@ -268,123 +215,8 @@
 
             <td class="description last">
             
-                </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
+                参数信息
                 
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="get">
-        <a href="#get" class="doc-link"></a>
-        get<span class="signature">(type, callback)</span> &rarr; <span class="type-signature returnType"><a href="EventCallback.html">EventCallback</a></span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L35">core/EventCollection.js 35</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    get
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
 
 <table class="params">
     <thead>
@@ -406,7 +238,7 @@
 
         <tr>
             
-                <td class="name"><code>type</code></td>
+                <td class="name"><code>url</code></td>
             
 
             <td class="type">
@@ -422,30 +254,13 @@
 
             <td class="description last">
             
-                </td>
+                服务的 url</td>
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
+    </tbody>
+</table>
             </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
         </tr>
 
     
@@ -479,525 +294,10 @@
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="getByEventCallbackId">
-        <a href="#getByEventCallbackId" class="doc-link"></a>
-        getByEventCallbackId<span class="signature">(type, id)</span> &rarr; <span class="type-signature returnType"><a href="EventCallback.html">EventCallback</a></span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L47">core/EventCollection.js 47</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    getByEventCallbackId
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="getByEventType">
-        <a href="#getByEventType" class="doc-link"></a>
-        getByEventType<span class="signature">(type)</span> &rarr; <span class="type-signature returnType">Array.&lt;<a href="EventCallback.html">EventCallback</a>></span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L58">core/EventCollection.js 58</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    getByEventType
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="remove">
-        <a href="#remove" class="doc-link"></a>
-        remove<span class="signature">(type, callback)</span> &rarr; <span class="type-signature returnType"><a href="EventCallback.html">EventCallback</a></span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L69">core/EventCollection.js 69</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    remove
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>callback</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="removeAll">
-        <a href="#removeAll" class="doc-link"></a>
-        removeAll<span class="signature">()</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/EventCollection.js#L85">core/EventCollection.js 85</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    removeAll
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="ImageryProvider.html#getLegends">ImageryProvider#getLegends</a>
+    </li></dd>
     
 
     
