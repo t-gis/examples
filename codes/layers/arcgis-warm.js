@@ -10,6 +10,10 @@ const arcgis = new ol.layer.Tile({
 });
 
 // 创建地图
-const map = new Map2d.Viewer("map", {
+const viewer = new Map2d.Viewer("map", {
     imageryProvider: arcgis,
+});
+
+viewer.camera.flyTo({
+    destination: new Map2d.Position(114.14347633526161, 22.63403261589422,)
 });

@@ -19,7 +19,7 @@ viewer.imageryLayers.addImageryProvider(cva_w);
 
 // 定位到深圳
 viewer.camera.flyTo({
-    destination: new Map2d.Position(114.06, 22.54)
+    destination: new Map2d.Position(114.14347633526161, 22.63403261589422,)
 });
 
 const map = viewer.map;
