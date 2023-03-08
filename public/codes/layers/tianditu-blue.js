@@ -12,7 +12,12 @@ const cia_w = new Map2d.UrlTemplateImageryProvider({
 });
 
 // 创建地图
-const map = new Map2d.Viewer("map");
+const viewer = new Map2d.Viewer("map");
 
-map.imageryLayers.addImageryProvider(img_w);
-map.imageryLayers.addImageryProvider(cia_w);
+viewer.imageryLayers.addImageryProvider(img_w);
+viewer.imageryLayers.addImageryProvider(cia_w);
+
+// 跳转到深圳
+viewer.camera.flyTo({
+    destination: new Map2d.Position(114.14347633526161, 22.63403261589422,)
+});

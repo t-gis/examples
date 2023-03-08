@@ -25,7 +25,7 @@ export const ItemBox = styled.div`
 `;
 
 export const SecondItemBox = styled.div`
-    border-top: 1px solid #e14d57;
+    border-top: 1px solid #005ce6;
     padding-top: 45px;
     padding-bottom: 20px;
     padding: 45px 0px 20px 0px;

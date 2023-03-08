@@ -12,7 +12,7 @@ export const SidebarBox = styled.div`
     color: #000;
     left: 0;
     top: 0;
-    background-color: #302d2d;
+    background-color: #f0f6fe;
 `
 
 export const SidebarItemBox = styled.div`
@@ -34,7 +34,7 @@ export const SidebarItemBox = styled.div`
         .label-title {
             display: flex;
             align-items: center;
-            color: #d2d2d2;
+            color: rgb(0 92 230);
             .title-icon {
                 display: flex;
                 align-items: center;
@@ -52,7 +52,7 @@ export const SidebarItemBox = styled.div`
             align-items: center;
             justify-content: center;
             transition: .3s;
-            color: #d2d2d2;
+            color: rgb(0 92 230);
             .iconfont {
                 font-size: 16px;
             }
@@ -97,6 +97,6 @@ export const SidebarItemChildBox = styled.div`
     .child-title {
         font-weight: 300;
         font-size: 12px;
-        color: #d2d2d2;
+        color: rgb(0 92 230);
     }
 `

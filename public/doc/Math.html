@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CustomDataSource - TGIS 文档</title>
+    <title>Math - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        CustomDataSource
+        Math
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="CustomDataSource">
-        <a href="#CustomDataSource" class="doc-link"></a>
-        new CustomDataSource<span class="signature">(name)</span>
+    <h4 class="name" id="Math">
+        <a href="#Math" class="doc-link"></a>
+        new Math<span class="signature">()</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/CustomDataSource.js#L10">dataSources/CustomDataSource.js 10</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Math.js#L5">core/Math.js 5</a>
 </div> -->
 
 
@@ -56,6 +56,105 @@
 
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".toDegrees">
+        <a href="#.toDegrees" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Math.toDegrees<span class="signature">(radians)</span> &rarr; <span class="type-signature returnType">Number</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Math.js#L24">core/Math.js 24</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    toDegrees
+</div>
 
 
 
@@ -89,13 +188,13 @@
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>radians</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Number</span>
 
 
             
@@ -105,7 +204,7 @@
 
             <td class="description last">
             
-                数据源名称</td>
+                </td>
         </tr>
 
     
@@ -122,6 +221,11 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+    
 
 
 
@@ -159,45 +263,100 @@
 </dl>
 
 
-    
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id=".toRadians">
+        <a href="#.toRadians" class="doc-link"></a>
+        <span class="type-signature attribute-static">static</span> Math.toRadians<span class="signature">(degrees)</span> &rarr; <span class="type-signature returnType">Number</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Math.js#L15">core/Math.js 15</a>
+</div> -->
+
+
+    </h4>
+
     </div>
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="clustering">
-    <a href="#clustering" class="doc-link"></a>
-    clustering<span class="type-signature"> : <a href="EntityCluster.html">EntityCluster</a></span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/CustomDataSource.js#L17">dataSources/CustomDataSource.js 17</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
 
 <div class="description">
-    获取或设置数据源的聚类选项
+    toRadians
 </div>
 
+
+
+
+
+
+
+
+
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>degrees</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+    
 
 
 
@@ -236,128 +395,6 @@
 
 
         
-            
-<div class="nameContainer">
-<h4 class="name" id="entities">
-    <a href="#entities" class="doc-link"></a>
-    entities<span class="type-signature"> : <a href="DataSourceCollection.html">DataSourceCollection</a></span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/CustomDataSource.js#L23">dataSources/CustomDataSource.js 23</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置数据源的实体集合
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="show">
-    <a href="#show" class="doc-link"></a>
-    show<span class="type-signature"> : Boolean</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/CustomDataSource.js#L44">dataSources/CustomDataSource.js 44</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或者设置该数据源是否显示
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-
     
 
     
