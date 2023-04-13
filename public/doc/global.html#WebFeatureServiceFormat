@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DrawAngleAttr - TGIS 文档</title>
+    <title>WebFeatureServiceFormat - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        DrawAngleAttr
+        WebFeatureServiceFormat
         <div class="titleCenterer"></div>
     </h1>
 
@@ -39,49 +39,93 @@
 
     
         
-    <div class="nameContainer">
-    <h4 class="name" id="DrawAngleAttr">
-        <a href="#DrawAngleAttr" class="doc-link"></a>
-        new DrawAngleAttr<span class="signature">()</span>
-        
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/DrawHandler/attr/Angle.js#L6">core/DrawHandler/attr/Angle.js 6</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/WebFeatureServiceFormat.js#L5">scene/WebFeatureServiceFormat.js 5</a>
 </div> -->
 
 
-    </h4>
 
-    </div>
+        
+            <div class="description">WFS 服务类型</div>
+        
+
+        
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
 
     
 
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>JSON</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
 
 
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">JSON</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>GML2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
 
 
+            
+            </td>
 
+            
 
+            
 
+            <td class="description last">GML2</td>
+        </tr>
 
+    
+    </tbody>
+</table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
 
 
     
@@ -113,7 +157,6 @@
     
 </dl>
 
-
     
     </div>
 
@@ -127,6 +170,136 @@
 
     
 
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id=".GML2">
+    <a href="#.GML2" class="doc-link"></a>
+    <span class="type-signature attribute-static">static</span> <span class="type-signature attribute-constant">constant</span> WebFeatureServiceFormat.GML2<span class="type-signature"> : String</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/WebFeatureServiceFormat.js#L17">scene/WebFeatureServiceFormat.js 17</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    GML2
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <span class="details-header">默认值:</span>
+    <code class="language-javascript">GML2</code>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id=".JSON">
+    <a href="#.JSON" class="doc-link"></a>
+    <span class="type-signature attribute-static">static</span> <span class="type-signature attribute-constant">constant</span> WebFeatureServiceFormat.JSON<span class="type-signature"> : String</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/WebFeatureServiceFormat.js#L11">scene/WebFeatureServiceFormat.js 11</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    JSON
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <span class="details-header">默认值:</span>
+    <code class="language-javascript">application/json</code>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
     
 
     

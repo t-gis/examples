@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "dev:107": "vite -m 107dev",
+    "build:107": "tsc && vite build -m 107pro",
     "preview": "vite preview",
     "build:ghpages": "vite build --mode ghpages"
   },
