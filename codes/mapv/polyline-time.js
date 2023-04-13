@@ -16,7 +16,8 @@ const viewer = new Map2d.Viewer("map", {
     mapCenter: [
         ...ol.proj.transform([114.321317, 30.398428], 'EPSG:4326', 'EPSG:3857'),
         11
-    ]
+    ],
+    mapZoom: 11
 });
 
 // 以下例子数据来源 mapv
@@ -24,7 +25,7 @@ const mapv = Map2d.SDK.mapv;
 const map = viewer.map;
 
 // 构造数据
-fetch('https://iclient.supermap.io/examples/data/wuhan-car')
+fetch('./assets/data/wuhan-car')
     .then(resp => resp.text())
     .then(rs => {
         var data = [];

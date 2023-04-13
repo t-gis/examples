@@ -12,7 +12,8 @@ const arcgis = new ol.layer.Tile({
 // 创建地图
 const viewer = new Map2d.Viewer("map", {
     imageryProvider: arcgis,
-    mapCenter: [104.912777, 34.730746, 4]
+    mapCenter: [104.912777, 34.730746, 4],
+    mapZoom: 4
 });
 
 // 以下例子数据来源 mapv
@@ -20,7 +21,7 @@ const mapv = Map2d.SDK.mapv;
 const map = viewer.map;
 
 // 构造数据
-fetch('https://iclient.supermap.io/examples/data/china.json')
+fetch('./assets/data/china.json')
     .then(resp => resp.text())
     .then(geojson => {
         var geojsonOptions = {

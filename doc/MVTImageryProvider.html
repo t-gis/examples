@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Popup - TGIS 文档</title>
+    <title>MVTImageryProvider - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        Popup
+        MVTImageryProvider
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="Popup">
-        <a href="#Popup" class="doc-link"></a>
-        new Popup<span class="signature">(options)</span>
+    <h4 class="name" id="MVTImageryProvider">
+        <a href="#MVTImageryProvider" class="doc-link"></a>
+        new MVTImageryProvider<span class="signature">()</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L53">scene/Popup.js 53</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/MVTImageryProvider3.js#L18">scene/MVTImageryProvider3.js 18</a>
 </div> -->
 
 
@@ -66,51 +66,6 @@
 
 
 
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Popup.html#.ConstructorOptions">Popup.ConstructorOptions</a></span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                初始化参数</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -148,7 +103,7 @@
     
         <h5>Example:</h5>
         
-    <pre><code class="language-javascript">// 创建弹窗位置const position = new Map2d.Position(114.0295, 22.609875);// 设置相机位置viewer.camera.flyTo({     destination: position})// 创建弹窗const popup = viewer.addPopup({     position: position,     offset: [0, 0],     html: `         &lt;div id='test' style='background: white;'>             &lt;header style='padding: 10px 20px; background: rgba(0,0,0,0.2)'>                 header             &lt;/header>             &lt;main style='padding: 20px;'>                 &lt;div>...contentcontentcontent&lt;/div>                 &lt;div>...contentcontentcontent&lt;/div>                 &lt;div>...contentcontentcontent&lt;/div>             &lt;/main>         &lt;/div>     `});// 设置位置// popup.position = new Map2d.Position(114.3295, 22.639875);// 设置偏移// popup.offset = [15, 15];// 销毁弹窗// popup.destroy()</code></pre>
+    <pre><code class="language-javascript">const protocol = "http";const host = "121.37.97.131";const port = 8090;const url = "iserver/services/map-TGIS/restjsr/v1/vectortile/maps/LINK_MARS";const mvt = new M({   url,  protocol,   host,  port});mvt.readyPromise.then(mvt => {    const layer = viewer.imageryLayers.addImageryProvider(mvt);})</code></pre>
 
     
 
@@ -178,433 +133,9 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
 
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="offset">
-    <a href="#offset" class="doc-link"></a>
-    offset<span class="type-signature"> : Array.&lt;Number></span>
     
 
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L114">scene/Popup.js 114</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置弹窗偏移
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="position">
-    <a href="#position" class="doc-link"></a>
-    position<span class="type-signature"> : <a href="Position.html">Position</a></span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L101">scene/Popup.js 101</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置弹窗位置
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="destroy">
-        <a href="#destroy" class="doc-link"></a>
-        destroy<span class="signature">()</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L93">scene/Popup.js 93</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    销毁弹窗
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-
-    
-        <h3 class="subsection-title">Type Definitions</h3>
-
-        
-                
-<div class="nameContainer">
-<h4 class="name" id=".ConstructorOptions">
-    <a href="#.ConstructorOptions" class="doc-link"></a>
-    Popup.ConstructorOptions
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/Popup.js#L1">scene/Popup.js 1</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>options.id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">唯一 id</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>options.html</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-|
-
-<span class="param-type">HTMLElement</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">自定义内容，html 元素或 html 字符串</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>options.position</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;Number></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">位置</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>options.offset</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;Number></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">偏移量，单位是像素</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-            
     
 
     

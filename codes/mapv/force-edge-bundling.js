@@ -12,7 +12,8 @@ const arcgis = new ol.layer.Tile({
 // 创建地图
 const viewer = new Map2d.Viewer("map", {
     imageryProvider: arcgis,
-    mapCenter: [104.912777, 34.730746, 4]
+    mapCenter: [104.912777, 34.730746, 4],
+    mapZoom: 4
 });
 
 // 以下例子数据来源 mapv
