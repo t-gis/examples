@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MousePositionControl - TGIS 文档</title>
+    <title>ImageryLayer - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        MousePositionControl
+        ImageryLayer
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="MousePositionControl">
-        <a href="#MousePositionControl" class="doc-link"></a>
-        new MousePositionControl<span class="signature">()</span>
+    <h4 class="name" id="ImageryLayer">
+        <a href="#ImageryLayer" class="doc-link"></a>
+        new ImageryLayer<span class="signature">(imageryProvider, <span class="optional">options</span>)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/widgets/control/MousePositionControl.js#L7">widgets/control/MousePositionControl.js 7</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/ImageryLayer.js#L11">scene/ImageryLayer.js 11</a>
 </div> -->
 
 
@@ -57,6 +57,9 @@
     
 
 
+<div class="description">
+    一个图像层，显示来自单个图像提供者的平铺图像数据。
+</div>
 
 
 
@@ -66,6 +69,87 @@
 
 
 
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>imageryProvider</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ImageryProvider.html">ImageryProvider</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                
+
+                
+            
+                要使用的图像提供程序。</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ImageryLayer.html#.ConstructorOptions">ImageryLayer.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                
+                        <span class="optional">optional</span>
+                
+                
+
+                
+            
+                具有以下属性的对象:</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -118,14 +202,164 @@
     </div>
 
     
-        <h3 class="subsection-title">Extends</h3>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="alpha">
+    <a href="#alpha" class="doc-link"></a>
+    alpha<span class="type-signature"></span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/ImageryLayer.js#L33">scene/ImageryLayer.js 33</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    该图层的 alpha 混合值，0.0 表示完全透明，1.0 表示完全不透明。
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <span class="details-header">默认值:</span>
+    <code class="language-javascript">1.0</code>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".ConstructorOptions">
+    <a href="#.ConstructorOptions" class="doc-link"></a>
+    ImageryLayer.ConstructorOptions
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/scene/ImageryLayer.js#L2">scene/ImageryLayer.js 2</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
 
         
 
+        
 
-    <ul>
-        <li>ol.control.MousePosition</li>
-    </ul>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>alpha</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">该图层的 alpha 混合值，0.0 表示完全透明，1.0 表示完全不透明。</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
 
 
     
@@ -142,6 +376,23 @@
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+            
     
 
     
