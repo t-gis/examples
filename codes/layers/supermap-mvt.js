@@ -1,20 +1,21 @@
 import * as Map2d from "map2d";
 
-const uri = "http://10.223.178.107/api/t-gis/tdtd";
-
-const vec_w = new Map2d.UrlTemplateImageryProvider({
-    url: uri + "/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk="
-});
-
-const cva_w = new Map2d.UrlTemplateImageryProvider({
-    url: uri + "/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="
-});
-
 // 创建地图
 const viewer = new Map2d.Viewer("map");
 
-// 添加天地图图层
+// 天地图参数
+const uri = "http://10.223.178.107/api/t-gis/tdtd";
+
+// 天地图底图
+const vec_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk="
+});
 viewer.imageryLayers.addImageryProvider(vec_w);
+
+// 天地图注记
+const cva_w = new Map2d.UrlTemplateImageryProvider({
+    url: uri + "/DataServer?T=cva_w&x={x}&y={y}&l={z}&tk="
+});
 viewer.imageryLayers.addImageryProvider(cva_w);
 
 // 定位到深圳

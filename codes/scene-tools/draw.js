@@ -1,13 +1,13 @@
 import * as Map2d from "map2d";
 
-// 创建 osm 图层
-const osm = new ol.layer.Tile({
-    source: new ol.source.OSM()
+// 创建 arcgis 图层
+const arcgis = new Map2d.UrlTemplateImageryProvider({
+    url: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer/Tile/{z}/{y}/{x}"
 });
 
 // 创建地图
 const viewer = new Map2d.Viewer("map", {
-    imageryProvider: osm,
+    imageryProvider: arcgis,
 });
 
 // 创建绘制处理器

@@ -1,5 +1,6 @@
 import * as Map2d from "map2d";
 
+// 注意：需要科学上网
 // 创建 osm 图层
 const osm = new ol.layer.Tile({
     source: new ol.source.OSM()
