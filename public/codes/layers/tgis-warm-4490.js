@@ -3,7 +3,7 @@ import * as Map2d from "map2d";
 // 创建地图
 const viewer = new Map2d.Viewer("map");
 
-// 加载规资局 4490 白色图层
+// 创建规资局 4490 白色图层
 const imageryProvider = new Map2d.WebMapTileServiceImageryProvider({
     url: "http://10.223.178.107/api/t-gis/gw/OGC/Map/SZ_CVA_W4490/",
     tilingScheme: new Map2d.CustomTilingScheme({
@@ -16,6 +16,8 @@ const imageryProvider = new Map2d.WebMapTileServiceImageryProvider({
     format: "image/png",
     minimumLevel: 10
 });
+
+// 加载规资局 4490 白色图层
 viewer.imageryLayers.addImageryProvider(imageryProvider);
 
 // 跳转到深圳

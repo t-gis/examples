@@ -56,7 +56,7 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
                     <div id="map"></div>
                     <div id="toolbar"></div>
                     <script>
-                        function onload(){
+                        async function onload(){
                             ${code}
                         }
                     </script>

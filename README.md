@@ -1,3 +1,9 @@
+## 更新 2023-05-15 22:34:52 星期一
+1、增加了 Tooltip 示例
+2、修复了 GeoJsonDataSource 类添加 "MultiPolygon" 类型显示错误
+3、添加了 BillboardGraphics 类的 options.image 属性对 HTMLCanvasElement 的支持
+4、添加了 PolygonGraphics 类的 material update 支持
+
 ## 更新 2023-03-01 00:58:39 星期三
 1、增加了 GeoJsonDataSource 类
 2、增加了 PolygonGraphics 类

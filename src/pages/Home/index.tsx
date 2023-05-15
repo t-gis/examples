@@ -52,7 +52,7 @@ const Home = memo(() => {
                         { title: "ArcGis蓝色底图", url: "./codes/layers/arcgis-blue.js", image: "layers/arcgis-blue.jpg" },
                         { title: "ArcGis灰色底图", url: "./codes/layers/arcgis-gray.js", image: "layers/arcgis-gray.jpg" },
                         { title: "ArcGis白色底图", url: "./codes/layers/arcgis-warm.js", image: "layers/arcgis-warm.jpg" },
-                        { title: "天地图蓝色底图", url: "./codes/layers/tianditu-blue.js", image: "layers/tianditu-blue.jpg" },
+                        { title: "天地图卫星底图", url: "./codes/layers/tianditu-blue.js", image: "layers/tianditu-blue.jpg" },
                         { title: "天地图白色底图", url: "./codes/layers/tianditu-warm.js", image: "layers/tianditu-warm.jpg" },
                         { title: "超图白色底图(深圳)", url: "./codes/layers/supermap-warm.js", image: "layers/supermap-warm.jpg" },
                         { title: "超图蓝色底图(深圳)", url: "./codes/layers/supermap-blue.js", image: "layers/supermap-blue.jpg" },
@@ -65,7 +65,7 @@ const Home = memo(() => {
                         { title: "天地图白色底图", url: "./codes/layers/tianditu-warm-1.js", image: "layers/tianditu-warm.jpg" },
                         { title: "规资蓝色底图", url: "./codes/layers/tgis-blue-4490.js", image: "layers/tgis-blue-4490.jpg" },
                         { title: "规资白色底图", url: "./codes/layers/tgis-warm-4490.js", image: "layers/tgis-warm-4490.jpg" },
-                        { title: "TGIS MVT图层", url: "./codes/layers/supermap-mvt.js", image: "layers/supermap-mvt.jpg" }
+                        { title: "MVT 图层", url: "./codes/layers/supermap-mvt.js", image: "layers/supermap-mvt.jpg" }
                     ]
                 }
             ]
@@ -80,6 +80,7 @@ const Home = memo(() => {
                     list: [
                         { title: "文字", url: "./codes/vector/entity-label.js", image: "vector/entity-label.jpg" },
                         { title: "图片", url: "./codes/vector/entity-billboard.js", image: "vector/entity-billboard.jpg" },
+                        { title: "图片-Canvas", url: "./codes/vector/entity-billboard-canvas.js", image: "vector/entity-billboard-canvas.jpg" },
                         { title: "点", url: "./codes/vector/entity-point.js", image: "vector/entity-point.jpg" },
                         { title: "线", url: "./codes/vector/entity-polyline.js", image: "vector/entity-polyline.jpg" },
                         { title: "面", url: "./codes/vector/entity-polygon.js", image: "vector/entity-polygon.jpg" },
@@ -106,7 +107,8 @@ const Home = memo(() => {
                 {
                     title: "弹出层",
                     list: [
-                        { title: "弹窗", url: "./codes/scene-tools/popup.js", image: "scene-tools/popup.jpg" }
+                        { title: "弹窗", url: "./codes/scene-tools/popup.js", image: "scene-tools/popup.jpg" },
+                        { title: "提示信息", url: "./codes/scene-tools/tooltip.js", image: "scene-tools/tooltip.jpg" }
                     ]
                 }
             ]

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EntityCluster - TGIS 文档</title>
+    <title>htmlToElements - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        EntityCluster
+        htmlToElements
         <div class="titleCenterer"></div>
     </h1>
 
@@ -39,48 +39,16 @@
 
     
         
-    <div class="nameContainer">
-    <h4 class="name" id="EntityCluster">
-        <a href="#EntityCluster" class="doc-link"></a>
-        new EntityCluster<span class="signature">()</span>
-        
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L10">dataSources/EntityCluster.js 10</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/htmlToElements.js#L5">core/htmlToElements.js 5</a>
 </div> -->
 
 
-    </h4>
 
-    </div>
+        
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 <dl class="details">
 
 
@@ -112,7 +80,6 @@
 
     
 </dl>
-
 
     
     </div>
@@ -127,199 +94,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="enabled">
-    <a href="#enabled" class="doc-link"></a>
-    enabled<span class="type-signature"> : Boolean</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L119">dataSources/EntityCluster.js 119</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    设置或获取是否开启聚合
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">false</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="pixelRange">
-    <a href="#pixelRange" class="doc-link"></a>
-    pixelRange<span class="type-signature"> : Number</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L146">dataSources/EntityCluster.js 146</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    设置或获取聚合的最小距离
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">20</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="show">
-    <a href="#show" class="doc-link"></a>
-    show<span class="type-signature"> : Boolean</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L159">dataSources/EntityCluster.js 159</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置是否显示集合中的实体
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">true</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
     
 
     

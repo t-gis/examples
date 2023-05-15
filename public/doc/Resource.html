@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EntityCluster - TGIS 文档</title>
+    <title>Resource - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        EntityCluster
+        Resource
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="EntityCluster">
-        <a href="#EntityCluster" class="doc-link"></a>
-        new EntityCluster<span class="signature">()</span>
+    <h4 class="name" id="Resource">
+        <a href="#Resource" class="doc-link"></a>
+        new Resource<span class="signature">(options)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L10">dataSources/EntityCluster.js 10</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Resource.js#L15">core/Resource.js 15</a>
 </div> -->
 
 
@@ -57,6 +57,9 @@
     
 
 
+<div class="description">
+    包含位置和我们需要检索它或创建派生资源的任何其他参数的资源
+</div>
 
 
 
@@ -66,6 +69,52 @@
 
 
 
+
+
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Resource.html#.ConstructorOptions">Resource.ConstructorOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                描述初始化选项的 url 或对象</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -128,18 +177,22 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
+                
 <div class="nameContainer">
-<h4 class="name" id="enabled">
-    <a href="#enabled" class="doc-link"></a>
-    enabled<span class="type-signature"> : Boolean</span>
+<h4 class="name" id=".ConstructorOptions">
+    <a href="#.ConstructorOptions" class="doc-link"></a>
+    Resource.ConstructorOptions
     
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L119">dataSources/EntityCluster.js 119</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/core/Resource.js#L2">core/Resource.js 2</a>
 </div> -->
 
 
@@ -149,10 +202,6 @@
 
 
 
-<div class="description">
-    设置或获取是否开启聚合
-</div>
-
 
 
 
@@ -160,7 +209,125 @@
 <dl class="details">
 
 
+    <h5 class="subsection-title">Properties:</h5>
+
     
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">资源的网址</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>queryParameters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">包含在检索资源时将发送的查询参数的对象</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>headers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">将发送的其他 HTTP 标头</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>responseType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">响应的类型</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
 
     
 
@@ -175,8 +342,7 @@
     
 
     
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">false</code>
+
     
 
     
@@ -193,137 +359,7 @@
 </dl>
 
 
-        
             
-<div class="nameContainer">
-<h4 class="name" id="pixelRange">
-    <a href="#pixelRange" class="doc-link"></a>
-    pixelRange<span class="type-signature"> : Number</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L146">dataSources/EntityCluster.js 146</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    设置或获取聚合的最小距离
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">20</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-<div class="nameContainer">
-<h4 class="name" id="show">
-    <a href="#show" class="doc-link"></a>
-    show<span class="type-signature"> : Boolean</span>
-    
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCluster.js#L159">dataSources/EntityCluster.js 159</a>
-</div> -->
-
-
-</h4>
-
-</div>
-
-
-
-<div class="description">
-    获取或设置是否显示集合中的实体
-</div>
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <span class="details-header">默认值:</span>
-    <code class="language-javascript">true</code>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-    
-
-    
-
     
 
     
