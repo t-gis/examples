@@ -18,9 +18,37 @@ const dataSource = await viewer.dataSources.add(Map2d.GeoJsonDataSource.load("./
     strokeWidth: 2,
 }));
 
-// 改变 geojson 的样式
-// dataSource.entities.values.forEach(entity => {
-//     entity.polygon.material = "green";
-//     entity.polygon.outlineColor = "yellow";
-//     entity.polygon.outlineWidth = "5";
-// })
+// 添加 Tooltip
+const addTooltip = (options) => {
+    return viewer.addPopup({
+        position: options.position,
+        offset: [0, -20],
+        origin: "bottom-center",
+        html: `
+            <div style='background-color: rgba(255,255,255,0.9); border-radius: 4px; position: relative;'>
+                <div style="color: #000; padding: 8px 16px; white-space: nowrap;">${options.text}</div>
+                <div style="position: absolute; left: 50%; transform: translateX(-50%); border: 6px solid; border-color: white transparent transparent transparent;"></div>
+            </div>
+        `
+    });
+}
+
+let tooltip = null;
+
+dataSource.entities.values.forEach(entity => {
+    entity.polygon.on("mouseover", e => {
+        const { centroid, name } = e.properties;
+        if (!tooltip) {
+            tooltip = addTooltip({
+                position: Map2d.Position.fromArray(centroid),
+                text: name
+            });
+        }
+    })
+    entity.polygon.on("mouseout", e => {
+        if (tooltip) {
+            tooltip.destroy();
+            tooltip = null;
+        }
+    })
+})
