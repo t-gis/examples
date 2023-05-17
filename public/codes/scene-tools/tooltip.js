@@ -1,5 +1,3 @@
-const url = "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/Tile/{z}/{y}/{x}"
-
 // 创建 argis 图层
 const arcgis = new Map2d.UrlTemplateImageryProvider({
     url: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/Tile/{z}/{y}/{x}"
@@ -17,12 +15,12 @@ const position = new Map2d.Position(114.0295, 22.609875);
 const addPopup = (position) => {
     return viewer.addPopup({
         position: position,
-        offset: [0, 0],
-        offset: [0,10],
+        offset: [0, -20],
+        origin: "bottom-center",
         html: `
-            <div style='background: #fff; border-radius: 4px; position: relative; transform: translate(-50%, calc(-100% - 30px));'>
+            <div style='background: #fff; border-radius: 4px; position: relative;'>
                 <div style="color: #000; padding: 8px 16px; white-space: nowrap;">Tooltip</div>
-                <div style="position: absolute; left: 50%; border: 6px solid; border-color: white transparent transparent transparent; transform: translateX(-50%);"></div>
+                <div style="position: absolute; left: 50%; transform: translateX(-50%); border: 6px solid; border-color: white transparent transparent transparent;"></div>
             </div>
         `
     });
