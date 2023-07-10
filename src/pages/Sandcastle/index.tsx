@@ -2,9 +2,9 @@ import React, { ElementRef, memo, useCallback, useEffect, useRef, useState } fro
 import { useSearchParams } from 'react-router-dom';
 import { Allotment } from "allotment";
 import "allotment/dist/style.css";
-
 import Source from '@/components/Source';
 import Stage from '@/components/Stage';
+import stores, { TYPE_EXAMPLE_LIST } from '@/stores';
 
 const Sandcastle = memo(() => {
 
@@ -17,7 +17,16 @@ const Sandcastle = memo(() => {
     type SourceHandle = ElementRef<typeof Source>;
     const sourceRef = useRef<SourceHandle>(null);
 
-    const getCode = useCallback(() => {        
+    const getCode = useCallback(() => {
+        const id = searchParams.get('id')
+        if (id != null) {
+            return new Promise<string>(resolve => {
+                stores.on(TYPE_EXAMPLE_LIST, (content: any[]) => {
+                    const one = content.find(x => x.id === id)
+                    resolve(one ? one.content : '')
+                })
+            })
+        }
         const url = searchParams.get("r");
         return new Promise<string>((resolve, reject) => {
             if(url) {

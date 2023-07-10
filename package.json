@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:95": "tsc && vite build -m 95dev",
     "dev:107": "vite -m 107dev",
     "build:107": "tsc && vite build -m 107pro",
     "preview": "vite preview",
