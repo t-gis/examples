@@ -25,13 +25,13 @@ const SecondChild = memo((data: SidebarDataEntity) => {
     //     new URL(`./dir/${name}.png`, import.meta.url).href
 
     // }, [data])
-
+    const imageSrc = data.image && data.image[0] === '/' ? data.image : new URL(`../../assets/images/${data.image}`, import.meta.url).href
     return (
         <SecondChildBox onClick={handleClick}>
             <div className="content">
                 <div className="chart-title">{data.title}</div>
                 <div className="chart-image">
-                    <img src={new URL(`../../assets/images/${data.image}`, import.meta.url).href} alt="" />
+                    <img src={imageSrc} alt="" />
                 </div>
             </div>
         </SecondChildBox>
