@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EntityCollection - TGIS 文档</title>
+    <title>GIFGraphics - TGIS 文档</title>
 
     <!--[if lt IE 9]>
       <script src="javascript/html5.js"></script>
@@ -18,7 +18,7 @@
 
     <h1 class="page-title">
         <!-- <a href="index.html"><img src="Images/CesiumLogo.png" class="cesiumLogo"></a> -->
-        EntityCollection
+        GIFGraphics
         <div class="titleCenterer"></div>
     </h1>
 
@@ -40,13 +40,13 @@
     
         
     <div class="nameContainer">
-    <h4 class="name" id="EntityCollection">
-        <a href="#EntityCollection" class="doc-link"></a>
-        new EntityCollection<span class="signature">(owner)</span>
+    <h4 class="name" id="GIFGraphics">
+        <a href="#GIFGraphics" class="doc-link"></a>
+        new GIFGraphics<span class="signature">(options)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L8">dataSources/EntityCollection.js 8</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics2.js#L17">dataSources/GIFGraphics2.js 17</a>
 </div> -->
 
 
@@ -89,13 +89,13 @@
 
         <tr>
             
-                <td class="name"><code>owner</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Map2D.html">Map2D</a></span>
+<span class="param-type"><a href="GIFGraphics.html#.ConstructorOptions">GIFGraphics.ConstructorOptions</a></span>
 
 
             
@@ -105,7 +105,7 @@
 
             <td class="description last">
             
-                此集合的创建者</td>
+                初始化参数对象</td>
         </tr>
 
     
@@ -163,6 +163,17 @@
     </div>
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Graphics.html">Graphics</a></li>
+    </ul>
+
+
+    
 
     
 
@@ -178,13 +189,13 @@
         
             
 <div class="nameContainer">
-<h4 class="name" id="values">
-    <a href="#values" class="doc-link"></a>
-    values<span class="type-signature"> : Array.&lt;<a href="Entity.html">Entity</a>></span>
+<h4 class="name" id="feature">
+    <a href="#feature" class="doc-link"></a>
+    feature<span class="type-signature"> : ol.Feature</span>
     
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L19">dataSources/EntityCollection.js 19</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L35">dataSources/Graphics.js 35</a>
 </div> -->
 
 
@@ -195,7 +206,507 @@
 
 
 <div class="description">
-    获取集合中 Entity 实例的数组。不应直接修改此数组。
+    请查看 <a href="https://openlayers.org/en/v6.15.1/apidoc/module-ol_Feature-Feature.html">OpenLayers</a> 官方说明文档
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#feature">Graphics#feature</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="geometry">
+    <a href="#geometry" class="doc-link"></a>
+    geometry<span class="type-signature"> : ol.geom.Geometry</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L29">dataSources/Graphics.js 29</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    请查看 <a href="https://openlayers.org/en/v6.15.1/apidoc/module-ol_geom_Geometry-Geometry.html">OpenLayers</a> 官方说明文档
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#geometry">Graphics#geometry</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="height">
+    <a href="#height" class="doc-link"></a>
+    height<span class="type-signature"> : Number</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics.js#L87">dataSources/GIFGraphics.js 87</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置高度
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="opacity">
+    <a href="#opacity" class="doc-link"></a>
+    opacity<span class="type-signature"> : Number</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics.js#L110">dataSources/GIFGraphics.js 110</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置透明度, 取值范围 0~1, 默认是 1 不透明
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="owner">
+    <a href="#owner" class="doc-link"></a>
+    owner<span class="type-signature"> : <a href="Entity.html">Entity</a></span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L23">dataSources/Graphics.js 23</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    owner
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#owner">Graphics#owner</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="pixelOffset">
+    <a href="#pixelOffset" class="doc-link"></a>
+    pixelOffset<span class="type-signature"> : Array.&lt;Number></span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics.js#L123">dataSources/GIFGraphics.js 123</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置偏移, 取值范围 [0~1, 0~1], 默认是 [0.5, 0.5]
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="rotation">
+    <a href="#rotation" class="doc-link"></a>
+    rotation<span class="type-signature"> : Number</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics.js#L98">dataSources/GIFGraphics.js 98</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置旋转角度, 单位弧度
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="show">
+    <a href="#show" class="doc-link"></a>
+    show<span class="type-signature"> : Boolean</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L41">dataSources/Graphics.js 41</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置该实体是否应显示
+</div>
+
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#show">Graphics#show</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+<div class="nameContainer">
+<h4 class="name" id="width">
+    <a href="#width" class="doc-link"></a>
+    width<span class="type-signature"> : Number</span>
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics.js#L76">dataSources/GIFGraphics.js 76</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
+<div class="description">
+    获取或设置宽度
 </div>
 
 
@@ -244,13 +755,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id="add">
-        <a href="#add" class="doc-link"></a>
-        add<span class="signature">(entity)</span>
+    <h4 class="name" id="getExtent">
+        <a href="#getExtent" class="doc-link"></a>
+        getExtent<span class="signature">()</span> &rarr; <span class="type-signature returnType">Array.&lt;Number></span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L28">dataSources/EntityCollection.js 28</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L106">dataSources/Graphics.js 106</a>
 </div> -->
 
 
@@ -262,7 +773,102 @@
 
 
 <div class="description">
-    将实体添加到集合中
+    获取范围
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    经纬度数组(左上角和右下角的经纬度组成的数组)
+</div>
+
+
+    
+
+
+
+
+<dl class="details">
+
+
+    
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#getExtent">Graphics#getExtent</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+            
+    <div class="nameContainer">
+    <h4 class="name" id="on">
+        <a href="#on" class="doc-link"></a>
+        on<span class="signature">(eventType, callback)</span>
+        
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L67">dataSources/Graphics.js 67</a>
+</div> -->
+
+
+    </h4>
+
+    </div>
+
+    
+
+
+<div class="description">
+    绑定监听事件
 </div>
 
 
@@ -297,366 +903,7 @@
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Entity.html">Entity</a></span>
-|
-
-<span class="param-type"><a href="Entity.html#.ConstructorOptions">Entity.ConstructorOptions</a></span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                要添加的实体</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    添加的实体
-</div>
-
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="contains">
-        <a href="#contains" class="doc-link"></a>
-        contains<span class="signature">(entity)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L51">dataSources/EntityCollection.js 51</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    判断实体是否在集合中
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Entity.html">Entity</a></span>
-
-
-            
-            </td>
-
-            
-
-            <td class="description last">
-            
-                要判断的实体</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    如果包含则为 true, 否则为 false
-</div>
-
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="getAll">
-        <a href="#getAll" class="doc-link"></a>
-        getAll<span class="signature">()</span> &rarr; <span class="type-signature returnType">Array.&lt;<a href="Entity.html">Entity</a>></span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L107">dataSources/EntityCollection.js 107</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    获取所有实体
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="getById">
-        <a href="#getById" class="doc-link"></a>
-        getById<span class="signature">(id)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L60">dataSources/EntityCollection.js 60</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    根据实体 id 获取实体
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>eventType</code></td>
             
 
             <td class="type">
@@ -672,132 +919,20 @@
 
             <td class="description last">
             
-                实体 id</td>
+                'mouseover'|'mouseout'|'mousemove'|'click'</td>
         </tr>
 
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    对应的实体或 undefined
-</div>
-
-
-    
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="remove">
-        <a href="#remove" class="doc-link"></a>
-        remove<span class="signature">(entity)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L69">dataSources/EntityCollection.js 69</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    移除实体
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>entity</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Entity.html">Entity</a></span>
+<span class="param-type">function</span>
 
 
             
@@ -807,7 +942,7 @@
 
             <td class="description last">
             
-                要移除的实体</td>
+                自定义回调函数</td>
         </tr>
 
     
@@ -824,15 +959,6 @@
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    成功移除则返回 true, 否则返回 false
-</div>
-
-
-    
 
 
 
@@ -844,6 +970,11 @@
 
     
 
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#on">Graphics#on</a>
+    </li></dd>
     
 
     
@@ -873,13 +1004,13 @@
         
             
     <div class="nameContainer">
-    <h4 class="name" id="removeAll">
-        <a href="#removeAll" class="doc-link"></a>
-        removeAll<span class="signature">()</span>
+    <h4 class="name" id="un">
+        <a href="#un" class="doc-link"></a>
+        un<span class="signature">(eventType, callback)</span>
         
 
 <!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L94">dataSources/EntityCollection.js 94</a>
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/Graphics.js#L93">dataSources/Graphics.js 93</a>
 </div> -->
 
 
@@ -891,88 +1022,7 @@
 
 
 <div class="description">
-    移除所有实体
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-        
-            
-    <div class="nameContainer">
-    <h4 class="name" id="removeById">
-        <a href="#removeById" class="doc-link"></a>
-        removeById<span class="signature">(id)</span>
-        
-
-<!-- <div class="source-link rightLinks">
-    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/EntityCollection.js#L82">dataSources/EntityCollection.js 82</a>
-</div> -->
-
-
-    </h4>
-
-    </div>
-
-    
-
-
-<div class="description">
-    根据实体 id 移除实体
+    解除绑定监听事件
 </div>
 
 
@@ -1007,7 +1057,7 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>eventType</code></td>
             
 
             <td class="type">
@@ -1023,7 +1073,30 @@
 
             <td class="description last">
             
-                实体 id</td>
+                'mouseover'|'mouseout'|'click'</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            <td class="description last">
+            
+                自定义回调函数</td>
         </tr>
 
     
@@ -1040,15 +1113,73 @@
 
 
 
-<h5>Returns:</h5>
 
-        
-<div class="param-desc">
-    成功移除则返回 true, 否则返回 false
-</div>
+
+
+
+<dl class="details">
 
 
     
+
+    
+
+    
+    <dt class="inherited-from">Inherited From:</dt>
+    <dd class="inherited-from"><ul class="dummy"><li>
+        <a href="Graphics.html#un">Graphics#un</a>
+    </li></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+<div class="nameContainer">
+<h4 class="name" id=".ConstructorOptions">
+    <a href="#.ConstructorOptions" class="doc-link"></a>
+    GIFGraphics.ConstructorOptions
+    
+
+<!-- <div class="source-link rightLinks">
+    <a href="https://github.com/CesiumGS/cesium/blob/undefined/Source/dataSources/GIFGraphics2.js#L8">dataSources/GIFGraphics2.js 8</a>
+</div> -->
+
+
+</h4>
+
+</div>
+
+
+
 
 
 
@@ -1086,9 +1217,7 @@
 </dl>
 
 
-        
-    
-
+            
     
 
     
