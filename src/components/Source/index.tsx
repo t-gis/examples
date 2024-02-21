@@ -71,6 +71,7 @@ const Source: ForwardRefRenderFunction<SourceHandle, SourceProps> = ({ onRun, on
                 </div>
             </div>
             <Editor
+                className="source-Editor"
                 height="100%"
                 defaultLanguage="javascript"
                 value={code}

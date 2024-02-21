@@ -64,4 +64,7 @@ export const Box = styled.div`
             }
         }
     }
+    .source-Editor{
+        background-color: #141414;
+    }
 `
