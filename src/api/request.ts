@@ -46,12 +46,10 @@ const tgisAxios = {
 
       fetch(url, { method: 'GET', headers: { ...defaultHeaders, ...headers } })
         .then(res => {
-          // console.log("拦截器返回：", res)
-          // console.log("拦截器请求状态返回：", res.status)
           if (res.status === 401 || res.status === 500) {
             // 如果返回 401，执行页面跳转到登录页
             // window.location.href = 'http://10.223.178.107/#/login';
-            window.location.href = import.meta.env.VITE_TGIS_LOGIN;
+            window.location.href = import.meta.env.VITE_TGIS_loginUrl;
           } else {
             return res.json();
           }
@@ -78,7 +76,7 @@ const tgisAxios = {
           if (res.status === 401 || res.status === 500) {
             // 如果返回 401，执行页面跳转到登录页
             // window.location.href = 'http://10.223.178.107/#/login';
-            window.location.href = import.meta.env.VITE_TGIS_homeUrl;
+            window.location.href = import.meta.env.VITE_TGIS_loginUrl;
           } else {
             return res.json();
           }
