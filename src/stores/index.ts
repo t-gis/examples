@@ -44,7 +44,7 @@ function sb() {
 const store = sb()
 
 function init() {
-	const params = { current: 0, size: 10, parentKey: '二维开发示例' }
+	const params = { current: 0, size: 10000, parentKey: '二维开发示例' }
 	getExampleList(params).then(res => {
 		if (!res || res.code !== 0 || !res.data || !Array.isArray(res.data.content)) throw new Error('failed')
 		store.emit(TYPE_EXAMPLE_LIST, res.data.content)
