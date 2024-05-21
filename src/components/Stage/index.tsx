@@ -24,6 +24,7 @@ const Sandcastle: ForwardRefRenderFunction<SandcastleHandle, SandcastleProps> = 
                     <link rel="stylesheet" href="./openlayers/v7.1.0/ol.css" />
                     <script src="./openlayers/v7.1.0/ol.js"></script>
                     <script src="./openlayers/v7.1.0/sfmap.js"></script>
+                    <script src="./turf.min.js"></script>
 
                     <script src="./map2d.iife.js"></script>
                     <style>
