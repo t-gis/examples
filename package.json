@@ -14,12 +14,16 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.4.6",
+    "@turf/flatten": "^7.0.0",
+    "@turf/intersect": "^7.0.0",
+    "@turf/isobands": "^7.0.0",
     "allotment": "^1.17.0",
     "monaco-editor": "^0.34.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "turf-featurecollection": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^18.11.0",
